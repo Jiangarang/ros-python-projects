@@ -1,0 +1,30 @@
+[rospy.client][INFO] 2023-02-07 23:44:19,448: init_node, name[/dancer], pid[14911]
+[xmlrpc][INFO] 2023-02-07 23:44:19,448: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-02-07 23:44:19,449: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40839/]
+[rospy.impl.masterslave][INFO] 2023-02-07 23:44:19,449: _ready: http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40839/
+[rospy.init][INFO] 2023-02-07 23:44:19,449: ROS Slave URI: [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40839/]
+[rospy.registration][INFO] 2023-02-07 23:44:19,450: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-02-07 23:44:19,450: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-02-07 23:44:19,549: registered with master
+[rospy.rosout][INFO] 2023-02-07 23:44:19,549: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-02-07 23:44:19,556: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-02-07 23:44:19,560: initializing /clock core topic
+[rospy.simtime][INFO] 2023-02-07 23:44:19,565: connected to core topic /clock
+[rospy.internal][INFO] 2023-02-07 23:44:19,620: topic[/clock] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/], count 0
+[rospy.internal][INFO] 2023-02-07 23:44:19,648: topic[/odom] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/], count 0
+[rospy.internal][INFO] 2023-02-07 23:44:19,649: topic[/scan] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/], count 0
+[rospy.internal][INFO] 2023-02-07 23:44:19,847: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-02-07 23:44:19,859: topic[/cmd_vel] adding connection to [/gazebo], count 0
+[rospy.core][INFO] 2023-02-07 23:44:57,139: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2023-02-07 23:44:57,142: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-07 23:44:57,142: topic[/cmd_vel] removing connection to /gazebo
+[rospy.internal][INFO] 2023-02-07 23:44:57,142: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/
+[rospy.internal][INFO] 2023-02-07 23:44:57,142: topic[/scan] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/
+[rospy.internal][INFO] 2023-02-07 23:44:57,143: topic[/odom] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/
+[rospy.impl.masterslave][INFO] 2023-02-07 23:44:57,143: signal-2
+[rospy.internal][ERROR] 2023-02-07 23:44:57,149: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 739, in receive_once
+    sock.setblocking(1)
+OSError: [Errno 9] Bad file descriptor
+
+[rospy.core][INFO] 2023-02-07 23:44:57,751: signal_shutdown [atexit]

@@ -1,0 +1,378 @@
+[2023-01-20T03:51:00.119Z] info  code-server 4.5.1 97d170331b51ee75c8e4bbdab23c755e3eeaaa8c
+[2023-01-20T03:51:00.120Z] info  Using user-data-dir ~
+[2023-01-20T03:51:00.125Z] info  Using config file ~/.config/code-server/config.yaml
+[2023-01-20T03:51:00.126Z] info  HTTP server listening on http://127.0.0.1:8888/ 
+[2023-01-20T03:51:00.126Z] info    - Authentication is enabled
+[2023-01-20T03:51:00.126Z] info      - Using password from ~/.config/code-server/config.yaml
+[2023-01-20T03:51:00.126Z] info    - Not serving HTTPS 
+[01:46:50] Extension host agent started.
+[01:46:55] [127.0.0.1][2613927f][ManagementConnection] New connection established.
+[01:46:56] [127.0.0.1][c6f1bad1][ExtensionHostConnection] New connection established.
+[01:46:56] [127.0.0.1][c6f1bad1][ExtensionHostConnection] <380> Launched Extension Host Process.
+[01:48:31] [127.0.0.1][3e8b92a7][ManagementConnection] New connection established.
+[01:48:32] [127.0.0.1][da678bbb][ExtensionHostConnection] New connection established.
+[01:48:32] [127.0.0.1][da678bbb][ExtensionHostConnection] <393> Launched Extension Host Process.
+[01:48:35] [127.0.0.1][3e8b92a7][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[01:48:35] [127.0.0.1][da678bbb][ExtensionHostConnection] <393> Extension Host Process exited with code: 0, signal: null.
+[01:49:10] [127.0.0.1][2613927f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[01:49:10] [127.0.0.1][c6f1bad1][ExtensionHostConnection] <380> Extension Host Process exited with code: 0, signal: null.
+[01:49:11] [127.0.0.1][c4acf86d][ManagementConnection] New connection established.
+[01:49:12] [127.0.0.1][2c54c479][ExtensionHostConnection] New connection established.
+[01:49:12] [127.0.0.1][2c54c479][ExtensionHostConnection] <424> Launched Extension Host Process.
+[01:50:25] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:50:26] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:51:29] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:51:29] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:52:32] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:52:32] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:53:35] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:53:35] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:54:38] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:55:18] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:56:21] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:56:21] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:57:24] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:57:24] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:58:27] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[01:58:27] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[01:59:30] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:00:19] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:04:12] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:04:12] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:05:15] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:05:20] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:06:23] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:06:23] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:08:22] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:09:25] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:13:32] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:14:35] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:14:59] [127.0.0.1][38f458a0][ManagementConnection] New connection established.
+[02:15:00] [127.0.0.1][b97a4f8d][ExtensionHostConnection] New connection established.
+[02:15:00] [127.0.0.1][b97a4f8d][ExtensionHostConnection] <1412> Launched Extension Host Process.
+[02:15:01] [127.0.0.1][38f458a0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[02:15:01] [127.0.0.1][b97a4f8d][ExtensionHostConnection] <1412> Extension Host Process exited with code: 0, signal: null.
+[02:15:48] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:16:03] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:17:27] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:22:50] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[02:22:50] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:29:15] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:30:22] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:36:26] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:46:21] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[02:58:28] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:02:34] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:03:37] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:03:37] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[03:05:01] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[03:22:29] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:32:58] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:42:12] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:44:17] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:45:34] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:48:10] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:49:13] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[03:49:13] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:50:54] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:50:54] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[03:51:57] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:51:57] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[03:53:00] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[03:53:00] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[03:53:18] [127.0.0.1][c4acf86d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[03:53:18] [127.0.0.1][2c54c479][ExtensionHostConnection] <424> Extension Host Process exited with code: 0, signal: null.
+[22:42:40] [127.0.0.1][71c3a950][ManagementConnection] New connection established.
+[22:42:41] [127.0.0.1][d6b27522][ExtensionHostConnection] New connection established.
+[22:42:41] [127.0.0.1][d6b27522][ExtensionHostConnection] <31525> Launched Extension Host Process.
+[22:46:03] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:47:06] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:48:09] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[22:48:49] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:49:52] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[22:49:52] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:50:55] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[22:50:55] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:51:58] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:51:58] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[22:53:01] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[22:53:50] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:55:57] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:57:37] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:58:39] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[22:58:49] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[22:59:51] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:00:54] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:00:54] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:01:57] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:01:57] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:03:49] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:04:51] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:08:49] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:22:46] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:23:49] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:23:51] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:24:54] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:24:54] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:27:32] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:29:40] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:29:40] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:30:43] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:30:43] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:31:46] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:31:46] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:43:39] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:43:54] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:51:37] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:52:40] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[23:52:40] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:54:08] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:55:15] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[23:58:34] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:09:34] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:14:01] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:20:12] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:24:59] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:27:37] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:28:39] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:28:59] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:30:02] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:30:02] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:31:05] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:31:05] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:36:28] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:48:17] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:49:01] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:53:25] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:54:42] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:54:42] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:56:20] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[00:58:25] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[00:59:31] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:00:59] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[01:00:59] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:05:37] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[01:05:37] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:06:40] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:06:40] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[01:30:35] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:31:53] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:36:54] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:37:57] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:37:57] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[01:38:20] [127.0.0.1][6f19beac][ManagementConnection] New connection established.
+[01:38:21] [127.0.0.1][fe961b72][ExtensionHostConnection] New connection established.
+[01:38:21] [127.0.0.1][fe961b72][ExtensionHostConnection] <9841> Launched Extension Host Process.
+[01:38:28] [127.0.0.1][6f19beac][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[01:38:28] [127.0.0.1][fe961b72][ExtensionHostConnection] <9841> Extension Host Process exited with code: 0, signal: null.
+[01:38:29] [127.0.0.1][9423e4aa][ManagementConnection] New connection established.
+[01:38:30] [127.0.0.1][f63a2a22][ExtensionHostConnection] New connection established.
+[01:38:30] [127.0.0.1][f63a2a22][ExtensionHostConnection] <10215> Launched Extension Host Process.
+[01:39:35] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:39:35] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[01:41:54] [127.0.0.1][9423e4aa][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[01:41:56] [127.0.0.1][9423e4aa][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[01:41:56] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[01:41:56] [127.0.0.1][f63a2a22][ExtensionHostConnection] The client has reconnected.
+[01:41:56] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[01:41:56] [127.0.0.1][9423e4aa][ManagementConnection] The client has reconnected.
+[01:42:00] [127.0.0.1][9423e4aa][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[03:23:07] [127.0.0.1][9423e4aa][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[03:23:07] [127.0.0.1][9423e4aa][ManagementConnection] The client has reconnected.
+[03:23:54] [127.0.0.1][f63a2a22][ExtensionHostConnection] The client has reconnected.
+[03:23:54] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[03:24:01] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[03:25:04] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[03:25:04] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[03:26:07] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[03:26:07] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[03:26:24] [127.0.0.1][71c3a950][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[03:26:24] [127.0.0.1][d6b27522][ExtensionHostConnection] <31525> Extension Host Process exited with code: 0, signal: null.
+[03:26:25] [127.0.0.1][ed41d4f9][ManagementConnection] New connection established.
+[03:26:26] [127.0.0.1][852816ca][ExtensionHostConnection] New connection established.
+[03:26:26] [127.0.0.1][852816ca][ExtensionHostConnection] <21713> Launched Extension Host Process.
+[03:27:38] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[03:27:43] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:30:16] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:33:11] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:35:30] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:36:33] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[03:37:33] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:38:36] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[03:38:36] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:39:39] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[03:39:39] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[03:40:26] [127.0.0.1][9423e4aa][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[03:40:26] [127.0.0.1][f63a2a22][ExtensionHostConnection] <10215> Extension Host Process exited with code: 0, signal: null.
+[03:40:26] [127.0.0.1][ed41d4f9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[03:40:27] [127.0.0.1][852816ca][ExtensionHostConnection] <21713> Extension Host Process exited with code: 0, signal: null.
+[22:06:47] [127.0.0.1][1449f0df][ManagementConnection] New connection established.
+[22:06:48] [127.0.0.1][c94cfe1b][ExtensionHostConnection] New connection established.
+[22:06:48] [127.0.0.1][c94cfe1b][ExtensionHostConnection] <29852> Launched Extension Host Process.
+[22:07:56] [127.0.0.1][1449f0df][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[22:07:56] [127.0.0.1][c94cfe1b][ExtensionHostConnection] <29852> Extension Host Process exited with code: 0, signal: null.
+[22:07:59] [127.0.0.1][230edff0][ManagementConnection] New connection established.
+[22:07:59] [127.0.0.1][611064e0][ExtensionHostConnection] New connection established.
+[22:08:00] [127.0.0.1][611064e0][ExtensionHostConnection] <806> Launched Extension Host Process.
+[22:11:10] [127.0.0.1][230edff0][ManagementConnection] The client has reconnected.
+[22:11:10] [127.0.0.1][611064e0][ExtensionHostConnection] The client has reconnected.
+[22:12:02] [127.0.0.1][230edff0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[22:12:02] [127.0.0.1][611064e0][ExtensionHostConnection] <806> Extension Host Process exited with code: 0, signal: null.
+[19:04:53] [127.0.0.1][61d8056d][ManagementConnection] New connection established.
+[19:04:54] [127.0.0.1][7dab7988][ExtensionHostConnection] New connection established.
+[19:04:54] [127.0.0.1][7dab7988][ExtensionHostConnection] <29058> Launched Extension Host Process.
+[19:06:07] [127.0.0.1][61d8056d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[19:06:07] [127.0.0.1][7dab7988][ExtensionHostConnection] <29058> Extension Host Process exited with code: 0, signal: null.
+[20:33:45] [127.0.0.1][e7fc2726][ManagementConnection] New connection established.
+[20:33:46] [127.0.0.1][93b5f192][ExtensionHostConnection] New connection established.
+[20:33:46] [127.0.0.1][93b5f192][ExtensionHostConnection] <23739> Launched Extension Host Process.
+[20:38:09] [127.0.0.1][e7fc2726][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[20:38:09] [127.0.0.1][93b5f192][ExtensionHostConnection] <23739> Extension Host Process exited with code: 0, signal: null.
+[20:38:12] [127.0.0.1][c2edfa8c][ManagementConnection] New connection established.
+[20:38:13] [127.0.0.1][1ac36ef2][ExtensionHostConnection] New connection established.
+[20:38:13] [127.0.0.1][1ac36ef2][ExtensionHostConnection] <4291> Launched Extension Host Process.
+[20:39:21] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:39:28] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:40:31] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:40:31] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:42:00] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:44:23] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:45:26] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:45:26] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:46:29] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:46:29] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:47:32] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:47:32] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:48:36] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:50:08] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:50:08] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:51:30] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:53:02] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:54:05] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:54:21] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:55:24] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:55:24] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:56:27] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:56:27] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:57:30] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:57:30] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[20:58:33] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[20:59:22] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:01:27] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:02:30] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:02:31] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:05:48] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:07:49] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:11:06] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:14:13] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:14:25] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:15:28] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:15:28] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:16:31] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:16:31] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:17:34] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:17:35] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:18:37] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:19:26] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:20:29] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:20:29] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:21:33] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:21:33] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:22:36] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:22:36] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:29:15] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:29:27] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:34:06] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:34:28] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:35:31] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:35:31] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:38:38] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:39:30] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:45:19] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[21:58:30] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[21:59:31] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:00:34] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:00:34] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:02:38] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:02:38] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:03:41] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:04:59] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:06:17] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:06:17] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:07:48] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:09:05] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:09:33] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:10:36] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:10:36] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:15:47] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:18:49] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:21:20] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:21:20] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:22:22] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:22:22] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:23:26] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:23:26] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:24:28] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:24:36] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:31:50] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:40:13] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:47:21] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:51:01] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:54:20] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:54:36] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:55:39] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:55:40] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:56:42] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:56:43] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:57:45] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[22:57:45] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[22:59:19] [127.0.0.1][c2edfa8c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[22:59:19] [127.0.0.1][1ac36ef2][ExtensionHostConnection] <4291> Extension Host Process exited with code: 0, signal: null.
+[22:59:26] [127.0.0.1][d9ba1fe1][ManagementConnection] New connection established.
+[22:59:28] [127.0.0.1][cd784f89][ExtensionHostConnection] New connection established.
+[22:59:28] [127.0.0.1][cd784f89][ExtensionHostConnection] <7057> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 344 chars and 1 size events
+[23:27:14] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[23:28:31] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[23:32:36] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[23:32:37] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[23:34:46] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[23:38:02] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[23:44:33] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:20:48] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:40:43] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:40:44] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:41:46] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:41:47] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:42:50] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:42:50] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:45:46] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:45:47] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:46:49] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:46:50] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:47:52] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:47:53] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:50:44] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:51:46] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[00:51:47] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[00:53:57] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:06:19] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:12:42] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:13:44] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:13:45] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:16:28] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:17:31] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:17:32] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:18:34] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:18:35] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:19:37] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:19:38] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:20:41] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:20:43] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:21:46] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:21:46] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:23:12] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[01:23:12] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:25:48] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:28:48] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[01:32:08] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.

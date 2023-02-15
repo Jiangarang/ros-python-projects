@@ -1,0 +1,33 @@
+[2023-02-13T22:06:51.063Z] Log level: Info
+[2023-02-13T22:06:51.065Z] [info] Validating found git in: git
+[2023-02-13T22:06:51.106Z] [info] Using git 2.25.1 from git
+[2023-02-13T22:06:51.141Z] > git rev-parse --show-toplevel [22ms]
+[2023-02-13T22:06:51.141Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:06:51.167Z] > git rev-parse --show-toplevel [18ms]
+[2023-02-13T22:06:51.179Z] > git rev-parse --git-dir --git-common-dir [1ms]
+[2023-02-13T22:06:51.184Z] [info] Open repository: /my_ros_data/catkin_ws/src/prrexamples
+[2023-02-13T22:06:51.203Z] > git status -z -uall [10ms]
+[2023-02-13T22:06:51.214Z] > git rev-parse --show-toplevel [12ms]
+[2023-02-13T22:06:51.214Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:06:51.222Z] > git symbolic-ref --short HEAD [9ms]
+[2023-02-13T22:06:51.232Z] > git rev-parse --show-toplevel [11ms]
+[2023-02-13T22:06:51.232Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:06:51.246Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+[2023-02-13T22:06:51.285Z] > git remote --verbose [19ms]
+[2023-02-13T22:06:51.285Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [27ms]
+[2023-02-13T22:06:51.288Z] > git rev-parse --show-toplevel [43ms]
+[2023-02-13T22:06:51.288Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:06:51.308Z] > git config --get commit.template [1ms]
+[2023-02-13T22:06:51.825Z] > git rev-parse --show-toplevel [1ms]
+[2023-02-13T22:06:51.826Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:06:51.998Z] > git show --textconv :src/dance.py [13ms]
+[2023-02-13T22:06:51.999Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/dance.py [3ms]
+[2023-02-13T22:06:52.106Z] > git check-ignore -v -z --stdin [0ms]
+[2023-02-13T22:07:38.364Z] > git rev-parse --show-toplevel [3ms]
+[2023-02-13T22:07:38.364Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).

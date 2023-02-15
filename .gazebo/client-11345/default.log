@@ -1,0 +1,308 @@
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1676419518 634698248) [Msg] Waiting for master.
+(1676419518 637203581) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1676419518 637247053) [Msg] Publicized address: 10.42.1.125
+(1676419518 637491745) Loaded .ini file from: "/my_ros_data/.gazebo/gui.ini"
+(1676419518 948513406) [Wrn] [GuiIface.cc:120] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+(1676419519 260093673) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/my_ros_data/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace"
+(1676419519 260249387) model.config file is missing in directory["/my_ros_data/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace"]
+(1676419519 260375646) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/my_ros_data/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace_2020"
+(1676419519 260522533) model.config file is missing in directory["/my_ros_data/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace_2020"]
+(1676419519 260696171) [Err] [InsertModelWidget.cc:403] Missing model.config for model "/my_ros_data/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_common_meshes"
+(1676419519 260845293) model.config file is missing in directory["/my_ros_data/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_common_meshes"]
+(1676419521 685056792) No spacenav daemon found. Spacenav functionality is disabled
+(1676420415 420330932) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676421416 48181539) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676421488 678049816) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676421687 964357425) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676421892 199162040) [Msg] ffmpeg [libx264] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+(1676421892 388269750) [Msg] ffmpeg [libx264] profile High, level 4.0
+
+(1676421892 393438115) [Msg] ffmpeg [libx264] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=5 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=10 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=2070 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+(1676421892 660438948) [Wrn] [CommonIface.cc:110] ffmpeg [swscaler] Warning: data is not aligned! This can lead to a speed loss
+
+(1676422052 126528881) [Msg] ffmpeg [libx264] frame I:67    Avg QP: 0.49  size: 18521
+
+(1676422052 126544521) [Msg] ffmpeg [libx264] frame P:330   Avg QP: 0.63  size:  1160
+
+(1676422052 126556293) [Msg] ffmpeg [libx264] frame B:264   Avg QP: 1.22  size:   862
+
+(1676422052 126568807) [Msg] ffmpeg [libx264] consecutive B-frames: 20.1% 79.9%
+
+(1676422052 126581771) [Msg] ffmpeg [libx264] mb I  I16..4: 92.0%  1.5%  6.4%
+
+(1676422052 126595307) [Msg] ffmpeg [libx264] mb P  I16..4:  0.2%  0.0%  0.0%  P16..4:  0.3%  0.1%  0.1%  0.0%  0.0%    skip:99.3%
+
+(1676422052 126610335) [Msg] ffmpeg [libx264] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.4%  0.1%  0.0%  direct: 0.1%  skip:99.4%  L0:28.8% L1:67.2% BI: 4.0%
+
+(1676422052 126622548) [Msg] ffmpeg [libx264] final ratefactor: -13.53
+
+(1676422052 126634030) [Msg] ffmpeg [libx264] 8x8 transform intra:1.5% inter:12.9%
+
+(1676422052 126645341) [Msg] ffmpeg [libx264] direct mvs  spatial:41.7% temporal:58.3%
+
+(1676422052 126666221) [Msg] ffmpeg [libx264] coded y,uvDC,uvAC intra: 4.6% 4.8% 4.7% inter: 0.1% 0.3% 0.3%
+
+(1676422052 126676771) [Msg] ffmpeg [libx264] i16 v,h,dc,p: 83% 15%  2%  0%
+
+(1676422052 126695125) [Msg] ffmpeg [libx264] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29%  8% 63%  0%  0%  0%  0%  0%  0%
+
+(1676422052 126707489) [Msg] ffmpeg [libx264] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 52% 29% 15%  1%  0%  1%  1%  1%  1%
+
+(1676422052 126726475) [Msg] ffmpeg [libx264] i8c dc,h,v,p: 90%  7%  3%  0%
+
+(1676422052 126738157) [Msg] ffmpeg [libx264] Weighted P-Frames: Y:0.0% UV:0.0%
+
+(1676422052 126751572) [Msg] ffmpeg [libx264] ref P L0: 88.1%  1.0%  6.8%  2.7%  1.1%  0.3%
+
+(1676422052 126770077) [Msg] ffmpeg [libx264] ref B L0: 87.7%  8.2%  3.4%  0.7%
+
+(1676422052 126782380) [Msg] ffmpeg [libx264] kb/s:560.15
+
+(1676422060 881840039) [Wrn] [GuiIface.cc:120] Empty filename passed to function
+(1676422210 131951693) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676422221 189424300) [Msg] ffmpeg [libx264] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+(1676422221 191115876) [Msg] ffmpeg [libx264] profile High, level 4.0
+
+(1676422221 191164248) [Msg] ffmpeg [libx264] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=5 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=10 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=2070 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+(1676422318 322579862) [Msg] ffmpeg [libx264] frame I:40    Avg QP: 0.96  size: 18061
+
+(1676422318 322602094) [Msg] ffmpeg [libx264] frame P:198   Avg QP: 0.84  size:  1137
+
+(1676422318 322617132) [Msg] ffmpeg [libx264] frame B:159   Avg QP: 0.87  size:   792
+
+(1676422318 322633884) [Msg] ffmpeg [libx264] consecutive B-frames: 19.9% 80.1%
+
+(1676422318 322652409) [Msg] ffmpeg [libx264] mb I  I16..4: 90.3%  3.3%  6.4%
+
+(1676422318 322670052) [Msg] ffmpeg [libx264] mb P  I16..4:  0.2%  0.0%  0.0%  P16..4:  0.4%  0.1%  0.1%  0.0%  0.0%    skip:99.1%
+
+(1676422318 322690421) [Msg] ffmpeg [libx264] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.6%  0.1%  0.0%  direct: 0.1%  skip:99.2%  L0:19.3% L1:78.2% BI: 2.5%
+
+(1676422318 322706992) [Msg] ffmpeg [libx264] final ratefactor: -12.37
+
+(1676422318 322720998) [Msg] ffmpeg [libx264] 8x8 transform intra:3.3% inter:16.3%
+
+(1676422318 322735075) [Msg] ffmpeg [libx264] direct mvs  spatial:35.2% temporal:64.8%
+
+(1676422318 322750374) [Msg] ffmpeg [libx264] coded y,uvDC,uvAC intra: 4.6% 4.8% 4.7% inter: 0.1% 0.3% 0.3%
+
+(1676422318 322765903) [Msg] ffmpeg [libx264] i16 v,h,dc,p: 83% 15%  2%  0%
+
+(1676422318 322793956) [Msg] ffmpeg [libx264] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20%  5% 74%  0%  0%  0%  0%  0%  0%
+
+(1676422318 322810057) [Msg] ffmpeg [libx264] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 52% 29% 15%  1%  0%  1%  1%  1%  1%
+
+(1676422318 322824183) [Msg] ffmpeg [libx264] i8c dc,h,v,p: 90%  7%  3%  0%
+
+(1676422318 322837879) [Msg] ffmpeg [libx264] Weighted P-Frames: Y:0.0% UV:0.0%
+
+(1676422318 322854170) [Msg] ffmpeg [libx264] ref P L0: 90.3%  1.0%  5.5%  2.0%  1.1%  0.2%
+
+(1676422318 322869399) [Msg] ffmpeg [libx264] ref B L0: 87.2%  8.1%  3.7%  1.0%
+
+(1676422318 322883145) [Msg] ffmpeg [libx264] kb/s:540.80
+
+(1676422669 752166167) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676422682 72186261) [Msg] ffmpeg [libx264] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+(1676422682 73295878) [Msg] ffmpeg [libx264] profile High, level 4.0
+
+(1676422682 73350471) [Msg] ffmpeg [libx264] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=5 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=10 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=2070 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+(1676422712 117124704) [Msg] ffmpeg [libx264] frame I:13    Avg QP: 2.90  size: 15867
+
+(1676422712 117153709) [Msg] ffmpeg [libx264] frame P:64    Avg QP: 2.54  size:  1392
+
+(1676422712 117175730) [Msg] ffmpeg [libx264] frame B:51    Avg QP: 2.30  size:   769
+
+(1676422712 117199966) [Msg] ffmpeg [libx264] consecutive B-frames: 19.4% 80.6%
+
+(1676422712 117225464) [Msg] ffmpeg [libx264] mb I  I16..4: 84.8%  8.8%  6.4%
+
+(1676422712 117252505) [Msg] ffmpeg [libx264] mb P  I16..4:  0.6%  0.0%  0.1%  P16..4:  0.9%  0.1%  0.1%  0.0%  0.0%    skip:98.1%
+
+(1676422712 117282362) [Msg] ffmpeg [libx264] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8:  1.3%  0.1%  0.0%  direct: 0.1%  skip:98.5%  L0: 9.9% L1:88.8% BI: 1.3%
+
+(1676422712 117306006) [Msg] ffmpeg [libx264] final ratefactor: -6.92
+
+(1676422712 117327858) [Msg] ffmpeg [libx264] 8x8 transform intra:8.6% inter:24.6%
+
+(1676422712 117349889) [Msg] ffmpeg [libx264] direct mvs  spatial:66.7% temporal:33.3%
+
+(1676422712 117374626) [Msg] ffmpeg [libx264] coded y,uvDC,uvAC intra: 4.7% 4.8% 4.6% inter: 0.3% 0.4% 0.4%
+
+(1676422712 117399082) [Msg] ffmpeg [libx264] i16 v,h,dc,p: 81% 17%  2%  0%
+
+(1676422712 117430642) [Msg] ffmpeg [libx264] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 16%  4% 80%  0%  0%  0%  0%  0%  0%
+
+(1676422712 117456420) [Msg] ffmpeg [libx264] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 51% 30% 15%  1%  0%  1%  1%  1%  1%
+
+(1676422712 117478081) [Msg] ffmpeg [libx264] i8c dc,h,v,p: 90%  7%  3%  0%
+
+(1676422712 117499001) [Msg] ffmpeg [libx264] Weighted P-Frames: Y:0.0% UV:0.0%
+
+(1676422712 117523677) [Msg] ffmpeg [libx264] ref P L0: 93.7%  0.7%  3.9%  1.1%  0.4%  0.1%
+
+(1676422712 117547422) [Msg] ffmpeg [libx264] ref B L0: 87.4% 10.5%  1.6%  0.5%
+
+(1676422712 117568542) [Msg] ffmpeg [libx264] kb/s:522.76
+
+(1676423381 696475444) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676423523 193282889) [Msg] ffmpeg [libx264] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+(1676423523 194111845) [Msg] ffmpeg [libx264] profile High, level 4.0
+
+(1676423523 194148103) [Msg] ffmpeg [libx264] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=5 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=10 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=2070 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+(1676423631 775695059) [Msg] ffmpeg [libx264] frame I:44    Avg QP: 0.99  size: 17715
+
+(1676423631 775725737) [Msg] ffmpeg [libx264] frame P:217   Avg QP: 1.15  size:   490
+
+(1676423631 775748409) [Msg] ffmpeg [libx264] frame B:174   Avg QP: 2.37  size:   304
+
+(1676423631 775773096) [Msg] ffmpeg [libx264] consecutive B-frames: 20.0% 80.0%
+
+(1676423631 775797973) [Msg] ffmpeg [libx264] mb I  I16..4: 90.2%  3.2%  6.6%
+
+(1676423631 775825204) [Msg] ffmpeg [libx264] mb P  I16..4:  0.3%  0.0%  0.0%  P16..4:  0.3%  0.0%  0.0%  0.0%  0.0%    skip:99.4%
+
+(1676423631 775855081) [Msg] ffmpeg [libx264] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.5%  0.0%  0.0%  direct: 0.0%  skip:99.4%  L0:12.9% L1:84.4% BI: 2.7%
+
+(1676423631 775896619) [Msg] ffmpeg [libx264] final ratefactor: -13.73
+
+(1676423631 775915395) [Msg] ffmpeg [libx264] 8x8 transform intra:3.2% inter:21.5%
+
+(1676423631 775934371) [Msg] ffmpeg [libx264] direct mvs  spatial:42.5% temporal:57.5%
+
+(1676423631 775954859) [Msg] ffmpeg [libx264] coded y,uvDC,uvAC intra: 4.2% 4.7% 4.6% inter: 0.1% 0.1% 0.1%
+
+(1676423631 775975088) [Msg] ffmpeg [libx264] i16 v,h,dc,p: 82% 16%  2%  0%
+
+(1676423631 776012037) [Msg] ffmpeg [libx264] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13%  6% 81%  0%  0%  0%  0%  0%  0%
+
+(1676423631 776034019) [Msg] ffmpeg [libx264] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 51% 35% 11%  1%  0%  1%  0%  1%  1%
+
+(1676423631 776053325) [Msg] ffmpeg [libx264] i8c dc,h,v,p: 94%  4%  2%  0%
+
+(1676423631 776071901) [Msg] ffmpeg [libx264] Weighted P-Frames: Y:0.0% UV:0.0%
+
+(1676423631 776094022) [Msg] ffmpeg [libx264] ref P L0: 90.9%  1.0%  6.0%  1.3%  0.6%  0.2%
+
+(1676423631 776114822) [Msg] ffmpeg [libx264] ref B L0: 81.7% 12.0%  4.5%  1.8%
+
+(1676423631 776133066) [Msg] ffmpeg [libx264] kb/s:431.56
+
+(1676423863 442910015) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_square/joint_cmd]
+(1676423874 595070091) [Err] [JointControlWidget.cc:393] Error advertising topic [/hinged_door/joint_cmd]
+(1676423973 628480996) [Wrn] [OBJLoader.cc:80] Both `d` and `Tr` parameters defined for "StopLight". Use the value of `d` for dissolve (line 8 in .mtl.)
+
+(1676423973 688711284) [Wrn] [OBJLoader.cc:80] Both `d` and `Tr` parameters defined for "StopLight". Use the value of `d` for dissolve (line 8 in .mtl.)
+
+(1676423986 809106001) [Wrn] [OBJLoader.cc:80] Both `d` and `Tr` parameters defined for "Hybrid". Use the value of `d` for dissolve (line 8 in .mtl.)
+Both `d` and `Tr` parameters defined for "Wheels3". Use the value of `d` for dissolve (line 22 in .mtl.)
+Both `d` and `Tr` parameters defined for "Hybrid_Interior". Use the value of `d` for dissolve (line 36 in .mtl.)
+Both `d` and `Tr` parameters defined for "Windows". Use the value of `d` for dissolve (line 50 in .mtl.)
+
+(1676424039 861453036) [Err] [JointControlWidget.cc:393] Error advertising topic [/nist_maze_wall_240/joint_cmd]
+(1676424069 271002845) [Msg] ffmpeg [libx264] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+(1676424069 271913787) [Msg] ffmpeg [libx264] profile High, level 4.0
+
+(1676424069 271963861) [Msg] ffmpeg [libx264] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=5 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=10 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=2070 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+(1676424131 639728184) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676424138 591927329) [Msg] ffmpeg [libx264] frame I:29    Avg QP:10.68  size: 86911
+
+(1676424138 591948610) [Msg] ffmpeg [libx264] frame P:136   Avg QP:16.05  size:  3522
+
+(1676424138 591964860) [Msg] ffmpeg [libx264] frame B:102   Avg QP:17.14  size:   950
+
+(1676424138 591982844) [Msg] ffmpeg [libx264] consecutive B-frames: 23.6% 76.4%
+
+(1676424138 592000668) [Msg] ffmpeg [libx264] mb I  I16..4: 29.7% 43.3% 26.9%
+
+(1676424138 592019444) [Msg] ffmpeg [libx264] mb P  I16..4:  0.2%  1.0%  0.6%  P16..4:  1.9%  0.5%  0.4%  0.0%  0.0%    skip:95.4%
+
+(1676424138 592044321) [Msg] ffmpeg [libx264] mb B  I16..4:  0.0%  0.1%  0.0%  B16..8:  2.1%  0.5%  0.2%  direct: 0.1%  skip:97.0%  L0:49.8% L1:48.3% BI: 1.9%
+
+(1676424138 592061964) [Msg] ffmpeg [libx264] final ratefactor: 16.38
+
+(1676424138 592078235) [Msg] ffmpeg [libx264] 8x8 transform intra:44.5% inter:5.8%
+
+(1676424138 592094235) [Msg] ffmpeg [libx264] direct mvs  spatial:62.7% temporal:37.3%
+
+(1676424138 592123941) [Msg] ffmpeg [libx264] coded y,uvDC,uvAC intra: 24.8% 11.0% 10.1% inter: 0.6% 0.6% 0.4%
+
+(1676424138 592140082) [Msg] ffmpeg [libx264] i16 v,h,dc,p: 80%  4% 16%  0%
+
+(1676424138 592165630) [Msg] ffmpeg [libx264] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 15% 46%  1%  0%  0%  0%  1%  3%
+
+(1676424138 592180989) [Msg] ffmpeg [libx264] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 10% 35%  2%  5%  3%  3%  6% 17%
+
+(1676424138 592194464) [Msg] ffmpeg [libx264] i8c dc,h,v,p: 95%  2%  2%  1%
+
+(1676424138 592207539) [Msg] ffmpeg [libx264] Weighted P-Frames: Y:0.0% UV:0.0%
+
+(1676424138 592222748) [Msg] ffmpeg [libx264] ref P L0: 83.9%  1.6%  9.6%  3.1%  1.4%  0.4%
+
+(1676424138 592237265) [Msg] ffmpeg [libx264] ref B L0: 76.1% 13.4%  7.2%  3.4%
+
+(1676424138 592250430) [Msg] ffmpeg [libx264] kb/s:2319.30
+
+(1676424148 61005917) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676424161 932354600) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_burger/joint_cmd]
+(1676424178 454673946) [Err] [JointControlWidget.cc:393] Error advertising topic [/turtlebot3_square/joint_cmd]
+(1676424185 942493664) [Msg] ffmpeg [libx264] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+
+(1676424185 943581240) [Msg] ffmpeg [libx264] profile High, level 4.0
+
+(1676424185 943630733) [Msg] ffmpeg [libx264] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=5 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=1 b_pyramid=0 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=10 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=abr mbtree=1 bitrate=2070 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+
+(1676424207 887377652) [Msg] ffmpeg [libx264] frame I:9     Avg QP:17.82  size: 50234
+
+(1676424207 887398611) [Msg] ffmpeg [libx264] frame P:41    Avg QP:20.51  size: 12127
+
+(1676424207 887418309) [Msg] ffmpeg [libx264] frame B:25    Avg QP:24.91  size:  4379
+
+(1676424207 887451752) [Msg] ffmpeg [libx264] consecutive B-frames: 31.6% 68.4%
+
+(1676424207 887469796) [Msg] ffmpeg [libx264] mb I  I16..4: 11.6% 61.6% 26.8%
+
+(1676424207 887489052) [Msg] ffmpeg [libx264] mb P  I16..4:  1.3%  5.9%  3.1%  P16..4:  7.7%  1.9%  1.0%  0.0%  0.0%    skip:79.1%
+
+(1676424207 887510703) [Msg] ffmpeg [libx264] mb B  I16..4:  0.1%  0.7%  0.5%  B16..8:  9.8%  1.4%  0.4%  direct: 0.2%  skip:86.9%  L0:41.7% L1:57.2% BI: 1.0%
+
+(1676424207 887532805) [Msg] ffmpeg [libx264] final ratefactor: 21.66
+
+(1676424207 887549226) [Msg] ffmpeg [libx264] 8x8 transform intra:60.1% inter:2.2%
+
+(1676424207 887565096) [Msg] ffmpeg [libx264] direct mvs  spatial:84.0% temporal:16.0%
+
+(1676424207 887582138) [Msg] ffmpeg [libx264] coded y,uvDC,uvAC intra: 20.9% 5.1% 4.4% inter: 3.0% 0.8% 0.7%
+
+(1676424207 887598960) [Msg] ffmpeg [libx264] i16 v,h,dc,p: 35% 32% 32%  1%
+
+(1676424207 887622825) [Msg] ffmpeg [libx264] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 14% 45%  0%  0%  0%  0%  0%  1%
+
+(1676424207 887641300) [Msg] ffmpeg [libx264] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 18% 40%  2%  3%  1%  3%  2%  5%
+
+(1676424207 887657881) [Msg] ffmpeg [libx264] i8c dc,h,v,p: 97%  2%  1%  0%
+
+(1676424207 887673411) [Msg] ffmpeg [libx264] Weighted P-Frames: Y:0.0% UV:0.0%
+
+(1676424207 887691705) [Msg] ffmpeg [libx264] ref P L0: 80.3%  1.0% 14.2%  3.1%  1.1%  0.3%
+
+(1676424207 887708838) [Msg] ffmpeg [libx264] ref B L0: 71.2% 16.9%  7.6%  4.3%
+
+(1676424207 888039603) [Msg] ffmpeg [libx264] kb/s:2823.39
+

@@ -1,0 +1,273 @@
+[rosmaster.main][INFO] 2023-02-14 22:01:59,058: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2023-02-14 22:01:59,059: Starting ROS Master Node
+[xmlrpc][INFO] 2023-02-14 22:01:59,059: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2023-02-14 22:01:59,060: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:11311/]
+[rosmaster.master][INFO] 2023-02-14 22:01:59,060: Master initialized: port[11311], uri[http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:11311/]
+[xmlrpc][INFO] 2023-02-14 22:01:59,060: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2023-02-14 22:01:59,143: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,144: +PARAM [/roslaunch/uris/host_michaeljiang_clouddesktop_deployment_798ccff866_hvfzw__46757] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,226: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,226: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,226: +PARAM [/use_sim_time] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,226: +PARAM [/gazebo/enable_ros_network] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,226: +PARAM [/robot_description] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:01:59,235: +SERVICE [/rosout/get_loggers] /rosout http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,236: +SERVICE [/rosout/set_logger_level] /rosout http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,249: +PUB [/rosout_agg] /rosout http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,261: +SUB [/rosout] /rosout http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,693: +PUB [/rosout] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,713: +SUB [/clock] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,714: +SERVICE [/spawn_urdf/get_loggers] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,715: +SERVICE [/spawn_urdf/set_logger_level] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/
+[rosmaster.master][INFO] 2023-02-14 22:01:59,719: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:01:59,732: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:01:59,761: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/']
+[rosmaster.master][INFO] 2023-02-14 22:01:59,789: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/']: sec=0.03, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:02:00,001: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2023-02-14 22:02:00,040: +PUB [/rosout] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:00,047: +SERVICE [/gazebo/get_loggers] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:00,052: +SERVICE [/gazebo/set_logger_level] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:00,065: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/']
+[rosmaster.master][INFO] 2023-02-14 22:02:00,073: +CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:00,116: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/']: sec=0.05, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:02:00,118: +PUB [/rosout] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/
+[rosmaster.master][INFO] 2023-02-14 22:02:00,119: +SERVICE [/gazebo_gui/get_loggers] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/
+[rosmaster.master][INFO] 2023-02-14 22:02:00,120: +SERVICE [/gazebo_gui/set_logger_level] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/
+[rosmaster.master][INFO] 2023-02-14 22:02:00,135: +CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:02:00,171: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']
+[rosmaster.master][INFO] 2023-02-14 22:02:00,222: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']: sec=0.05, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:02:01,485: +PUB [/clock] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,486: +SERVICE [/gazebo/spawn_sdf_model] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,490: +SERVICE [/gazebo/spawn_urdf_model] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,491: +SERVICE [/gazebo/delete_model] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,495: +SERVICE [/gazebo/delete_light] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,499: +SERVICE [/gazebo/get_model_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,501: +SERVICE [/gazebo/get_model_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,502: +SERVICE [/gazebo/get_world_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,503: +SERVICE [/gazebo/get_joint_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,503: +SERVICE [/gazebo/get_link_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,504: +SERVICE [/gazebo/get_link_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,505: +SERVICE [/gazebo/get_light_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,506: +SERVICE [/gazebo/set_light_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,510: publisherUpdate[/clock] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/']
+[rosmaster.master][INFO] 2023-02-14 22:02:01,511: publisherUpdate[/clock] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:02:01,513: +SERVICE [/gazebo/get_physics_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,518: +PUB [/gazebo/link_states] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,519: +PUB [/gazebo/model_states] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,524: +PUB [/gazebo/performance_metrics] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,530: +SERVICE [/gazebo/set_link_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,533: +SERVICE [/gazebo/set_physics_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,539: +SERVICE [/gazebo/set_model_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,541: +SERVICE [/gazebo/set_model_configuration] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,549: +SERVICE [/gazebo/set_joint_properties] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,565: +SERVICE [/gazebo/set_link_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,571: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:02:01,575: +SERVICE [/gazebo/set_parameters] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,582: +SUB [/gazebo/set_link_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,582: +PUB [/gazebo/parameter_descriptions] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,586: +SUB [/gazebo/set_model_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,586: +PUB [/gazebo/parameter_updates] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,587: +SERVICE [/gazebo/pause_physics] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,587: +SERVICE [/gazebo/unpause_physics] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,591: +SERVICE [/gazebo/apply_body_wrench] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,593: +SERVICE [/gazebo/apply_joint_effort] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,593: +SERVICE [/gazebo/clear_joint_forces] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,594: +SERVICE [/gazebo/clear_body_wrenches] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,596: +SERVICE [/gazebo/reset_simulation] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,598: +SERVICE [/gazebo/reset_world] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,642: +PARAM [/gazebo/time_step] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,643: +PARAM [/gazebo/max_update_rate] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,647: +PARAM [/gazebo/gravity_x] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,653: +PARAM [/gazebo/gravity_y] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,654: +PARAM [/gazebo/gravity_z] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,655: +PARAM [/gazebo/auto_disable_bodies] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,656: +PARAM [/gazebo/sor_pgs_precon_iters] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,657: +PARAM [/gazebo/sor_pgs_iters] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,659: +PARAM [/gazebo/sor_pgs_w] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,659: +PARAM [/gazebo/sor_pgs_rms_error_tol] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,660: +PARAM [/gazebo/cfm] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,661: +PARAM [/gazebo/erp] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,661: +PARAM [/gazebo/contact_surface_layer] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,662: +PARAM [/gazebo/contact_max_correcting_vel] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,662: +PARAM [/gazebo/max_contacts] by /gazebo
+[rosmaster.master][ERROR] 2023-02-14 22:02:01,928: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 177, in validated_f
+    code, msg, val = f(*newArgs, **kwds)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 435, in searchParam
+    search_key = self.param_server.search_param(caller_id, key)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/paramserver.py", line 116, in search_param
+    raise ValueError("namespace must be global")
+ValueError: namespace must be global
+
+[rosmaster.master][INFO] 2023-02-14 22:02:01,930: +PUB [/scan] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,985: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:02:01,989: +PARAM [/gazebo/time_step] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,990: -SUB [/clock] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,990: +PARAM [/gazebo/max_update_rate] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,990: -PUB [/rosout] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42975/
+[rosmaster.master][INFO] 2023-02-14 22:02:01,991: -SERVICE [/spawn_urdf/get_loggers] /spawn_urdf rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39823
+[rosmaster.master][INFO] 2023-02-14 22:02:01,991: -SERVICE [/spawn_urdf/set_logger_level] /spawn_urdf rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39823
+[rosmaster.master][INFO] 2023-02-14 22:02:01,991: +PARAM [/gazebo/gravity_x] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,992: +PARAM [/gazebo/gravity_y] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,993: +PARAM [/gazebo/gravity_z] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,994: +PARAM [/gazebo/auto_disable_bodies] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,994: +PARAM [/gazebo/sor_pgs_precon_iters] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,995: +PARAM [/gazebo/sor_pgs_iters] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,996: +PARAM [/gazebo/sor_pgs_w] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,996: +PARAM [/gazebo/sor_pgs_rms_error_tol] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:01,999: +PARAM [/gazebo/cfm] by /gazebo
+[rosmaster.master][ERROR] 2023-02-14 22:02:02,000: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 177, in validated_f
+    code, msg, val = f(*newArgs, **kwds)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 435, in searchParam
+    search_key = self.param_server.search_param(caller_id, key)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/paramserver.py", line 116, in search_param
+    raise ValueError("namespace must be global")
+ValueError: namespace must be global
+
+[rosmaster.master][INFO] 2023-02-14 22:02:02,001: +PARAM [/gazebo/erp] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:02,002: +PARAM [/gazebo/contact_surface_layer] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:02,003: +PUB [/joint_states] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:02,003: +PARAM [/gazebo/contact_max_correcting_vel] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:02,004: +PARAM [/gazebo/max_contacts] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:02:02,005: +PUB [/tf] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:02,015: +SUB [/cmd_vel] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:02,015: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']
+[rosmaster.master][INFO] 2023-02-14 22:02:02,016: +PUB [/odom] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:02,016: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:02:02,029: +PUB [/imu] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:02:02,030: +SERVICE [/imu_service] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:04:13,576: +PUB [/rosout] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:13,579: +SUB [/clock] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:13,588: +SERVICE [/rostopic_28850_1676412253407/get_loggers] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:13,593: +SERVICE [/rostopic_28850_1676412253407/set_logger_level] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:13,607: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/']
+[rosmaster.master][INFO] 2023-02-14 22:04:13,615: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:04:13,631: +SUB [/scan] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:21,158: -SUB [/clock] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:21,158: -SUB [/scan] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:21,158: -PUB [/rosout] /rostopic_28850_1676412253407 http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rosmaster.master][INFO] 2023-02-14 22:04:21,158: -SERVICE [/rostopic_28850_1676412253407/get_loggers] /rostopic_28850_1676412253407 rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40705
+[rosmaster.master][INFO] 2023-02-14 22:04:21,158: -SERVICE [/rostopic_28850_1676412253407/set_logger_level] /rostopic_28850_1676412253407 rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40705
+[rosmaster.master][INFO] 2023-02-14 22:04:21,227: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']
+[rosmaster.master][INFO] 2023-02-14 22:04:21,228: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:08:29,942: +PARAM [/roslaunch/uris/host_michaeljiang_clouddesktop_deployment_798ccff866_hvfzw__40243] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:08:29,952: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:08:29,952: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:08:29,952: +PARAM [/use_sim_time] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:08:29,952: +PARAM [/gazebo/enable_ros_network] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:08:29,952: +PARAM [/robot_description] by /roslaunch
+[rosmaster.master][INFO] 2023-02-14 22:08:30,498: +PUB [/rosout] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rosmaster.master][INFO] 2023-02-14 22:08:30,512: +SUB [/clock] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rosmaster.master][INFO] 2023-02-14 22:08:30,525: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/']
+[rosmaster.master][INFO] 2023-02-14 22:08:30,526: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:08:30,555: +SERVICE [/spawn_urdf/get_loggers] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rosmaster.master][INFO] 2023-02-14 22:08:30,563: +SERVICE [/spawn_urdf/set_logger_level] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rosmaster.master][INFO] 2023-02-14 22:08:30,572: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:08:30,592: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:08:30,595: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:08:30,611: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:08:30,615: +CACHEDPARAM [/rosout_disable_topics_generation] by /spawn_urdf
+[rosmaster.master][INFO] 2023-02-14 22:08:30,617: -SUB [/clock] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rosmaster.master][INFO] 2023-02-14 22:08:30,617: -PUB [/rosout] /spawn_urdf http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rosmaster.master][INFO] 2023-02-14 22:08:30,617: -SERVICE [/spawn_urdf/get_loggers] /spawn_urdf rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45231
+[rosmaster.master][INFO] 2023-02-14 22:08:30,617: -SERVICE [/spawn_urdf/set_logger_level] /spawn_urdf rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45231
+[rosmaster.master][INFO] 2023-02-14 22:08:30,628: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']
+[rosmaster.master][INFO] 2023-02-14 22:08:30,639: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:08:31,329: +PUB [/rosout] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/
+[rosmaster.master][INFO] 2023-02-14 22:08:31,329: +SERVICE [/gazebo_gui/get_loggers] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/
+[rosmaster.master][INFO] 2023-02-14 22:08:31,330: +SERVICE [/gazebo_gui/set_logger_level] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/
+[rosmaster.master][INFO] 2023-02-14 22:08:31,345: +CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,373: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/']
+[rosmaster.master][INFO] 2023-02-14 22:08:31,395: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:08:31,615: -PUB [/rosout] /gazebo_gui http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33749/
+[rosmaster.master][INFO] 2023-02-14 22:08:31,617: -SERVICE [/gazebo_gui/get_loggers] /gazebo_gui rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36247
+[rosmaster.master][INFO] 2023-02-14 22:08:31,618: -SERVICE [/gazebo_gui/set_logger_level] /gazebo_gui rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36247
+[rosmaster.master][INFO] 2023-02-14 22:08:31,618: -CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,769: +PARAM [/gazebo_gui/time_step] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,770: +PARAM [/gazebo_gui/max_update_rate] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,772: +PARAM [/gazebo_gui/gravity_x] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,773: +PARAM [/gazebo_gui/gravity_y] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,773: +PARAM [/gazebo_gui/gravity_z] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,774: +PARAM [/gazebo_gui/auto_disable_bodies] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,776: +PARAM [/gazebo_gui/sor_pgs_precon_iters] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,784: +PARAM [/gazebo_gui/sor_pgs_iters] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,785: +PARAM [/gazebo_gui/sor_pgs_w] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,786: +PARAM [/gazebo_gui/sor_pgs_rms_error_tol] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,787: +PARAM [/gazebo_gui/cfm] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,787: +PARAM [/gazebo_gui/erp] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,795: +PARAM [/gazebo_gui/contact_surface_layer] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,804: +PARAM [/gazebo_gui/contact_max_correcting_vel] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,806: +PARAM [/gazebo_gui/max_contacts] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,808: +PARAM [/gazebo_gui/time_step] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,808: +PARAM [/gazebo_gui/max_update_rate] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,809: +PARAM [/gazebo_gui/gravity_x] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,810: +PARAM [/gazebo_gui/gravity_y] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,811: +PARAM [/gazebo_gui/gravity_z] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,817: +PARAM [/gazebo_gui/auto_disable_bodies] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,827: +PARAM [/gazebo_gui/sor_pgs_precon_iters] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,828: +PARAM [/gazebo_gui/sor_pgs_iters] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,829: +PARAM [/gazebo_gui/sor_pgs_w] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,829: +PARAM [/gazebo_gui/sor_pgs_rms_error_tol] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,830: +PARAM [/gazebo_gui/cfm] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,830: +PARAM [/gazebo_gui/erp] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,830: +PARAM [/gazebo_gui/contact_surface_layer] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,831: +PARAM [/gazebo_gui/contact_max_correcting_vel] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:08:31,831: +PARAM [/gazebo_gui/max_contacts] by /gazebo_gui
+[rosmaster.master][INFO] 2023-02-14 22:09:23,429: -SUB [/gazebo/set_link_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,432: -SUB [/gazebo/set_model_state] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,433: -PUB [/clock] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,434: -PUB [/gazebo/link_states] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,444: -PUB [/gazebo/model_states] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,448: -PUB [/gazebo/performance_metrics] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,452: -SERVICE [/gazebo/spawn_sdf_model] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,454: -SERVICE [/gazebo/spawn_urdf_model] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,456: -SERVICE [/gazebo/delete_model] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,456: -SERVICE [/gazebo/delete_light] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,458: -SERVICE [/gazebo/get_model_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,458: -SERVICE [/gazebo/get_model_state] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,459: -SERVICE [/gazebo/get_world_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,459: -SERVICE [/gazebo/get_joint_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,460: -SERVICE [/gazebo/get_link_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,461: -SERVICE [/gazebo/get_link_state] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,461: -SERVICE [/gazebo/get_light_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,462: -SERVICE [/gazebo/set_light_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,462: -SERVICE [/gazebo/get_physics_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,463: -SERVICE [/gazebo/set_link_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,464: -SERVICE [/gazebo/set_physics_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,465: -SERVICE [/gazebo/set_model_state] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,465: -SERVICE [/gazebo/set_model_configuration] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,466: -SERVICE [/gazebo/set_joint_properties] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,467: -SERVICE [/gazebo/set_link_state] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,472: -SERVICE [/gazebo/pause_physics] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,472: -SERVICE [/gazebo/unpause_physics] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,473: -SERVICE [/gazebo/apply_body_wrench] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,477: -SERVICE [/gazebo/apply_joint_effort] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,478: -SERVICE [/gazebo/clear_joint_forces] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,479: -SERVICE [/gazebo/clear_body_wrenches] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,486: -SERVICE [/gazebo/reset_simulation] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,488: -SERVICE [/gazebo/reset_world] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,489: -PUB [/gazebo/parameter_descriptions] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,496: -PUB [/gazebo/parameter_updates] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,497: -SERVICE [/gazebo/set_parameters] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,503: -SUB [/cmd_vel] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,504: -PUB [/joint_states] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,505: -PUB [/odom] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,505: -PUB [/tf] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,506: -PUB [/imu] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,507: -SERVICE [/imu_service] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,520: -PUB [/scan] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,797: -PUB [/rosout] /gazebo http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rosmaster.master][INFO] 2023-02-14 22:09:23,798: -SERVICE [/gazebo/get_loggers] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,799: -SERVICE [/gazebo/set_logger_level] /gazebo rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42869
+[rosmaster.master][INFO] 2023-02-14 22:09:23,803: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/']
+[rosmaster.master][INFO] 2023-02-14 22:09:23,804: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:43103/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-14 22:09:23,804: -CACHEDPARAM [/rosout_disable_topics_generation] by /gazebo
+[rosmaster.master][INFO] 2023-02-14 22:09:24,105: -PUB [/rosout_agg] /rosout http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/
+[rosmaster.master][INFO] 2023-02-14 22:09:24,106: -SUB [/rosout] /rosout http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36959/
+[rosmaster.master][INFO] 2023-02-14 22:09:24,106: -SERVICE [/rosout/get_loggers] /rosout rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:59359
+[rosmaster.master][INFO] 2023-02-14 22:09:24,107: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:59359
+[rosmaster.master][INFO] 2023-02-14 22:09:24,107: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.main][INFO] 2023-02-14 22:09:24,118: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2023-02-14 22:09:24,118: stopping master...
+[rospy.core][INFO] 2023-02-14 22:09:24,118: signal_shutdown [atexit]

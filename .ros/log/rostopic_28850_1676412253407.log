@@ -1,0 +1,21 @@
+[rospy.client][INFO] 2023-02-14 22:04:13,469: init_node, name[/rostopic_28850_1676412253407], pid[28850]
+[xmlrpc][INFO] 2023-02-14 22:04:13,469: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-02-14 22:04:13,469: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/]
+[rospy.impl.masterslave][INFO] 2023-02-14 22:04:13,469: _ready: http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/
+[rospy.init][INFO] 2023-02-14 22:04:13,469: ROS Slave URI: [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45571/]
+[rospy.registration][INFO] 2023-02-14 22:04:13,470: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-02-14 22:04:13,470: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-02-14 22:04:13,570: registered with master
+[rospy.rosout][INFO] 2023-02-14 22:04:13,570: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-02-14 22:04:13,577: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-02-14 22:04:13,578: initializing /clock core topic
+[rospy.simtime][INFO] 2023-02-14 22:04:13,580: connected to core topic /clock
+[rospy.internal][INFO] 2023-02-14 22:04:13,611: topic[/clock] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/], count 0
+[rospy.internal][INFO] 2023-02-14 22:04:13,672: topic[/scan] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/], count 0
+[rospy.internal][INFO] 2023-02-14 22:04:13,828: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2023-02-14 22:04:21,155: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2023-02-14 22:04:21,161: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-14 22:04:21,162: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rospy.internal][INFO] 2023-02-14 22:04:21,162: topic[/scan] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rospy.impl.masterslave][INFO] 2023-02-14 22:04:21,162: signal-2
+[rospy.core][INFO] 2023-02-14 22:04:21,783: signal_shutdown [atexit]

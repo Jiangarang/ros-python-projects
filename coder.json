@@ -1,0 +1,9 @@
+{
+  "query": {
+    "folder": "/my_ros_data/catkin_ws"
+  },
+  "update": {
+    "checked": 1676415567146,
+    "version": "4.9.1"
+  }
+}

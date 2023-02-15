@@ -1,0 +1,410 @@
+[2023-01-25 01:46:50.420] [remoteagent] [info] 
+
+
+
+
+[2023-01-25 01:46:50.420] [remoteagent] [info] Extension host agent started.
+[2023-01-25 01:46:55.714] [remoteagent] [info] [127.0.0.1][2613927f][ManagementConnection] New connection established.
+[2023-01-25 01:46:55.825] [remoteagent] [warning] Using the in-memory credential store as the operating system's credential store could not be accessed. Please see https://aka.ms/vscode-server-keyring on how to set this up. Details: Cannot find module '../build/Release/keytar.node'
+Require stack:
+- /code-server/lib/vscode/node_modules/keytar/lib/keytar.js
+- /code-server/lib/vscode/out/bootstrap-amd.js
+- /code-server/out/node/util.js
+- /code-server/out/node/cli.js
+- /code-server/out/node/entry.js
+[2023-01-25 01:46:56.284] [remoteagent] [info] [127.0.0.1][c6f1bad1][ExtensionHostConnection] New connection established.
+[2023-01-25 01:46:56.308] [remoteagent] [info] [127.0.0.1][c6f1bad1][ExtensionHostConnection] <380> Launched Extension Host Process.
+[2023-01-25 01:48:31.911] [remoteagent] [info] [127.0.0.1][3e8b92a7][ManagementConnection] New connection established.
+[2023-01-25 01:48:32.527] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 12
+[2023-01-25 01:48:32.529] [remoteagent] [info] [127.0.0.1][da678bbb][ExtensionHostConnection] New connection established.
+[2023-01-25 01:48:32.543] [remoteagent] [info] [127.0.0.1][da678bbb][ExtensionHostConnection] <393> Launched Extension Host Process.
+[2023-01-25 01:48:32.616] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 13
+[2023-01-25 01:48:32.976] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 14
+[2023-01-25 01:48:33.020] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 15
+[2023-01-25 01:48:33.020] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 16
+[2023-01-25 01:48:33.020] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 17
+[2023-01-25 01:48:33.020] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 18
+[2023-01-25 01:48:33.020] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 19
+[2023-01-25 01:48:33.021] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 20
+[2023-01-25 01:48:33.021] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 21
+[2023-01-25 01:48:33.021] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 22
+[2023-01-25 01:48:35.467] [remoteagent] [info] [127.0.0.1][3e8b92a7][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-01-25 01:48:35.483] [remoteagent] [info] [127.0.0.1][da678bbb][ExtensionHostConnection] <393> Extension Host Process exited with code: 0, signal: null.
+[2023-01-25 01:49:10.887] [remoteagent] [info] [127.0.0.1][2613927f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-01-25 01:49:10.902] [remoteagent] [info] [127.0.0.1][c6f1bad1][ExtensionHostConnection] <380> Extension Host Process exited with code: 0, signal: null.
+[2023-01-25 01:49:11.789] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] New connection established.
+[2023-01-25 01:49:12.389] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] New connection established.
+[2023-01-25 01:49:12.410] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] <424> Launched Extension Host Process.
+[2023-01-25 01:50:25.395] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:50:26.381] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:51:29.421] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:51:29.483] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:52:32.402] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:52:32.487] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:53:35.409] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:53:35.456] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:54:38.412] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:55:18.408] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:56:21.421] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:56:21.497] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:57:24.408] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:57:24.469] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:58:27.416] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 01:58:27.470] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 01:59:30.403] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:00:19.397] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:04:12.515] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:04:12.566] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:05:15.435] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:05:20.392] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:06:23.411] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:06:23.487] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:08:22.935] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:09:25.402] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:13:32.266] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:14:35.392] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:14:59.798] [remoteagent] [info] [127.0.0.1][38f458a0][ManagementConnection] New connection established.
+[2023-01-25 02:15:00.416] [remoteagent] [info] [127.0.0.1][b97a4f8d][ExtensionHostConnection] New connection established.
+[2023-01-25 02:15:00.441] [remoteagent] [info] [127.0.0.1][b97a4f8d][ExtensionHostConnection] <1412> Launched Extension Host Process.
+[2023-01-25 02:15:00.525] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 45
+[2023-01-25 02:15:00.823] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 46
+[2023-01-25 02:15:01.124] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 47
+[2023-01-25 02:15:01.147] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 48
+[2023-01-25 02:15:01.149] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 49
+[2023-01-25 02:15:01.149] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 50
+[2023-01-25 02:15:01.149] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 51
+[2023-01-25 02:15:01.151] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 52
+[2023-01-25 02:15:01.151] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 53
+[2023-01-25 02:15:01.151] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 54
+[2023-01-25 02:15:01.160] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 55
+[2023-01-25 02:15:01.414] [remoteagent] [info] [127.0.0.1][38f458a0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-01-25 02:15:01.505] [remoteagent] [info] [127.0.0.1][b97a4f8d][ExtensionHostConnection] <1412> Extension Host Process exited with code: 0, signal: null.
+[2023-01-25 02:15:48.407] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:16:03.412] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:17:27.449] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:22:50.487] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 02:22:50.554] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:29:15.603] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:30:22.811] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:36:26.381] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:46:21.543] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 02:58:28.507] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:02:34.671] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:03:37.429] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:03:37.502] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 03:05:01.114] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 03:22:29.960] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:32:58.474] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:42:12.454] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:44:17.242] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:45:34.415] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:48:10.459] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:49:13.534] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 03:49:13.648] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:50:54.414] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:50:54.509] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 03:51:57.481] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:51:57.558] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 03:53:00.431] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] The client has reconnected.
+[2023-01-25 03:53:00.552] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has reconnected.
+[2023-01-25 03:53:18.764] [remoteagent] [info] [127.0.0.1][c4acf86d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-01-25 03:53:18.797] [remoteagent] [info] [127.0.0.1][2c54c479][ExtensionHostConnection] <424> Extension Host Process exited with code: 0, signal: null.
+[2023-02-07 22:42:40.972] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] New connection established.
+[2023-02-07 22:42:41.806] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] New connection established.
+[2023-02-07 22:42:41.838] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] <31525> Launched Extension Host Process.
+[2023-02-07 22:46:03.780] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:47:06.052] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:48:09.150] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 22:48:49.199] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:49:52.148] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 22:49:52.252] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:50:55.274] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 22:50:55.393] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:51:58.215] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:51:58.312] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 22:53:01.244] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 22:53:50.132] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:55:57.472] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:57:37.180] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:58:39.620] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 22:58:49.234] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 22:59:51.490] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:00:54.194] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:00:54.252] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:01:57.196] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:01:57.214] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:03:49.297] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:04:51.607] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:08:49.400] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:22:46.147] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:23:49.161] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:23:51.111] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:24:54.129] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:24:54.182] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:27:32.125] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:29:40.160] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:29:40.198] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:30:43.139] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:30:43.217] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:31:46.140] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:31:46.229] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:43:39.160] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:43:54.141] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:51:37.237] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:52:40.195] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-07 23:52:40.229] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:54:08.524] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:55:15.851] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-07 23:58:34.186] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:09:34.191] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:14:01.941] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:20:12.194] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:24:59.208] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:27:37.030] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:28:39.182] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:28:59.178] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:30:02.191] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:30:02.276] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:31:05.240] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:31:05.336] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:36:28.193] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:48:17.177] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:49:01.194] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:53:25.203] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:54:42.240] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:54:42.270] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:56:20.156] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 00:58:25.199] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 00:59:31.216] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:00:59.169] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:00:59.201] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:05:37.240] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:05:37.294] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:06:40.252] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:06:40.353] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:30:35.959] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:31:53.059] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:36:54.863] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:37:57.235] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:37:57.296] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:38:20.752] [remoteagent] [info] [127.0.0.1][6f19beac][ManagementConnection] New connection established.
+[2023-02-08 01:38:21.404] [remoteagent] [info] [127.0.0.1][fe961b72][ExtensionHostConnection] New connection established.
+[2023-02-08 01:38:21.496] [remoteagent] [info] [127.0.0.1][fe961b72][ExtensionHostConnection] <9841> Launched Extension Host Process.
+[2023-02-08 01:38:28.480] [remoteagent] [info] [127.0.0.1][6f19beac][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-08 01:38:28.522] [remoteagent] [info] [127.0.0.1][fe961b72][ExtensionHostConnection] <9841> Extension Host Process exited with code: 0, signal: null.
+[2023-02-08 01:38:29.276] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] New connection established.
+[2023-02-08 01:38:30.017] [remoteagent] [info] [127.0.0.1][f63a2a22][ExtensionHostConnection] New connection established.
+[2023-02-08 01:38:30.118] [remoteagent] [info] [127.0.0.1][f63a2a22][ExtensionHostConnection] <10215> Launched Extension Host Process.
+[2023-02-08 01:39:35.256] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:39:35.326] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:41:54.170] [remoteagent] [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/code-server/lib/vscode/out/vs/server/node/server.main.js:146:7923)
+    at process.emit (node:events:539:35)
+[2023-02-08 01:41:54.170] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2023-02-08 01:41:56.521] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2023-02-08 01:41:56.524] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:41:56.577] [remoteagent] [info] [127.0.0.1][f63a2a22][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 01:41:56.625] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 01:41:56.692] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] The client has reconnected.
+[2023-02-08 01:42:00.177] [remoteagent] [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/code-server/lib/vscode/out/vs/server/node/server.main.js:146:7923)
+    at process.emit (node:events:539:35)
+[2023-02-08 01:42:00.177] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2023-02-08 03:23:07.786] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2023-02-08 03:23:07.786] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] The client has reconnected.
+[2023-02-08 03:23:54.860] [remoteagent] [info] [127.0.0.1][f63a2a22][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:23:54.860] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:24:01.215] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 03:25:04.408] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 03:25:04.593] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:26:07.447] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:26:07.535] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has reconnected.
+[2023-02-08 03:26:24.354] [remoteagent] [info] [127.0.0.1][71c3a950][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-08 03:26:24.391] [remoteagent] [info] [127.0.0.1][d6b27522][ExtensionHostConnection] <31525> Extension Host Process exited with code: 0, signal: null.
+[2023-02-08 03:26:25.377] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] New connection established.
+[2023-02-08 03:26:26.286] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] New connection established.
+[2023-02-08 03:26:26.373] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] <21713> Launched Extension Host Process.
+[2023-02-08 03:27:38.391] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:27:43.451] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:30:16.386] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:33:11.122] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:35:30.391] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:36:33.382] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:37:33.379] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:38:36.380] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:38:36.459] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:39:39.483] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has reconnected.
+[2023-02-08 03:39:39.581] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] The client has reconnected.
+[2023-02-08 03:40:26.492] [remoteagent] [info] [127.0.0.1][9423e4aa][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-08 03:40:26.543] [remoteagent] [info] [127.0.0.1][f63a2a22][ExtensionHostConnection] <10215> Extension Host Process exited with code: 0, signal: null.
+[2023-02-08 03:40:26.973] [remoteagent] [info] [127.0.0.1][ed41d4f9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-08 03:40:27.005] [remoteagent] [info] [127.0.0.1][852816ca][ExtensionHostConnection] <21713> Extension Host Process exited with code: 0, signal: null.
+[2023-02-13 22:06:47.480] [remoteagent] [info] [127.0.0.1][1449f0df][ManagementConnection] New connection established.
+[2023-02-13 22:06:48.867] [remoteagent] [info] [127.0.0.1][c94cfe1b][ExtensionHostConnection] New connection established.
+[2023-02-13 22:06:48.908] [remoteagent] [info] [127.0.0.1][c94cfe1b][ExtensionHostConnection] <29852> Launched Extension Host Process.
+[2023-02-13 22:07:56.791] [remoteagent] [info] [127.0.0.1][1449f0df][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-13 22:07:56.812] [remoteagent] [info] [127.0.0.1][c94cfe1b][ExtensionHostConnection] <29852> Extension Host Process exited with code: 0, signal: null.
+[2023-02-13 22:07:59.042] [remoteagent] [info] [127.0.0.1][230edff0][ManagementConnection] New connection established.
+[2023-02-13 22:07:59.982] [remoteagent] [info] [127.0.0.1][611064e0][ExtensionHostConnection] New connection established.
+[2023-02-13 22:08:00.038] [remoteagent] [info] [127.0.0.1][611064e0][ExtensionHostConnection] <806> Launched Extension Host Process.
+[2023-02-13 22:11:10.354] [remoteagent] [info] [127.0.0.1][230edff0][ManagementConnection] The client has reconnected.
+[2023-02-13 22:11:10.415] [remoteagent] [info] [127.0.0.1][611064e0][ExtensionHostConnection] The client has reconnected.
+[2023-02-13 22:12:02.888] [remoteagent] [info] [127.0.0.1][230edff0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-13 22:12:02.915] [remoteagent] [info] [127.0.0.1][611064e0][ExtensionHostConnection] <806> Extension Host Process exited with code: 0, signal: null.
+[2023-02-14 19:04:53.653] [remoteagent] [info] [127.0.0.1][61d8056d][ManagementConnection] New connection established.
+[2023-02-14 19:04:54.373] [remoteagent] [info] [127.0.0.1][7dab7988][ExtensionHostConnection] New connection established.
+[2023-02-14 19:04:54.396] [remoteagent] [info] [127.0.0.1][7dab7988][ExtensionHostConnection] <29058> Launched Extension Host Process.
+[2023-02-14 19:06:07.122] [remoteagent] [info] [127.0.0.1][61d8056d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-14 19:06:07.142] [remoteagent] [info] [127.0.0.1][7dab7988][ExtensionHostConnection] <29058> Extension Host Process exited with code: 0, signal: null.
+[2023-02-14 20:33:45.868] [remoteagent] [info] [127.0.0.1][e7fc2726][ManagementConnection] New connection established.
+[2023-02-14 20:33:46.645] [remoteagent] [info] [127.0.0.1][93b5f192][ExtensionHostConnection] New connection established.
+[2023-02-14 20:33:46.691] [remoteagent] [info] [127.0.0.1][93b5f192][ExtensionHostConnection] <23739> Launched Extension Host Process.
+[2023-02-14 20:38:09.387] [remoteagent] [info] [127.0.0.1][e7fc2726][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-14 20:38:09.400] [remoteagent] [info] [127.0.0.1][93b5f192][ExtensionHostConnection] <23739> Extension Host Process exited with code: 0, signal: null.
+[2023-02-14 20:38:12.710] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] New connection established.
+[2023-02-14 20:38:13.362] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] New connection established.
+[2023-02-14 20:38:13.404] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] <4291> Launched Extension Host Process.
+[2023-02-14 20:39:21.885] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:39:28.858] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:40:31.815] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:40:31.932] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:42:00.693] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:44:23.754] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:45:26.868] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:45:26.887] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:46:29.777] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:46:29.813] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:47:32.796] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:47:32.903] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:48:36.070] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:50:08.828] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:50:08.882] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:51:30.807] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:53:02.884] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:54:05.798] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:54:21.789] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:55:24.857] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:55:24.958] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:56:27.887] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:56:27.967] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:57:30.847] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:57:30.937] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 20:58:33.898] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 20:59:22.901] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:01:27.788] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:02:30.852] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:02:31.008] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:05:48.970] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:07:49.750] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:11:06.474] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:14:13.842] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:14:25.876] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:15:28.832] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:15:28.979] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:16:31.827] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:16:31.887] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:17:34.975] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:17:35.035] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:18:37.882] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:19:26.848] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:20:29.830] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:20:29.902] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:21:33.226] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:21:33.438] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:22:36.025] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:22:36.115] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:29:15.821] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:29:27.895] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:34:06.881] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:34:28.870] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:35:31.927] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:35:31.982] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:38:38.899] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:39:30.122] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:45:19.475] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 21:58:30.786] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 21:59:31.924] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:00:34.838] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:00:34.907] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:02:38.851] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:02:38.940] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:03:41.830] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:04:59.874] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:06:17.875] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:06:17.996] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:07:48.843] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:09:05.026] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:09:33.826] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:10:36.837] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:10:36.940] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:15:47.667] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:18:49.146] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:21:20.083] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:21:20.159] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:22:22.842] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:22:22.994] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:23:26.074] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:23:26.132] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:24:28.918] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:24:36.024] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:31:50.888] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:40:13.067] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:47:21.669] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:51:01.200] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:54:20.882] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:54:36.896] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:55:39.935] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:55:40.011] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:56:42.859] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:56:43.016] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:57:45.930] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 22:57:45.959] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has reconnected.
+[2023-02-14 22:59:19.009] [remoteagent] [info] [127.0.0.1][c2edfa8c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-14 22:59:19.060] [remoteagent] [info] [127.0.0.1][1ac36ef2][ExtensionHostConnection] <4291> Extension Host Process exited with code: 0, signal: null.
+[2023-02-14 22:59:26.656] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] New connection established.
+[2023-02-14 22:59:28.268] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] New connection established.
+[2023-02-14 22:59:28.313] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] <7057> Launched Extension Host Process.
+[2023-02-14 23:27:14.939] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-14 23:28:31.602] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-14 23:32:36.930] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-14 23:32:37.011] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 23:34:46.854] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-14 23:38:02.361] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-14 23:44:33.802] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:20:48.581] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:40:43.961] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:40:44.032] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:41:46.953] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:41:47.032] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:42:50.004] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:42:50.066] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:45:46.945] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:45:47.032] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:46:49.932] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:46:50.012] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:47:52.971] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:47:53.048] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:50:44.061] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:51:46.956] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 00:51:47.162] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 00:53:57.016] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:06:19.852] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:12:42.653] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:13:44.984] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:13:45.100] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:16:28.944] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:17:31.990] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:17:32.046] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:18:34.918] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:18:35.020] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:19:37.985] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:19:38.051] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:20:41.125] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:20:43.018] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:21:46.042] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:21:46.088] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:23:12.019] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 01:23:12.072] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:25:48.262] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:28:48.453] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:32:08.263] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.

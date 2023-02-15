@@ -1,0 +1,42 @@
+[01:46:55] Using the in-memory credential store as the operating system's credential store could not be accessed. Please see https://aka.ms/vscode-server-keyring on how to set this up. Details: Cannot find module '../build/Release/keytar.node'
+Require stack:
+- /code-server/lib/vscode/node_modules/keytar/lib/keytar.js
+- /code-server/lib/vscode/out/bootstrap-amd.js
+- /code-server/out/node/util.js
+- /code-server/out/node/cli.js
+- /code-server/out/node/entry.js
+[01:48:32] RequestStore#acceptReply was called without receiving a matching request 12
+[01:48:32] RequestStore#acceptReply was called without receiving a matching request 13
+[01:48:32] RequestStore#acceptReply was called without receiving a matching request 14
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 15
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 16
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 17
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 18
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 19
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 20
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 21
+[01:48:33] RequestStore#acceptReply was called without receiving a matching request 22
+[02:15:00] RequestStore#acceptReply was called without receiving a matching request 45
+[02:15:00] RequestStore#acceptReply was called without receiving a matching request 46
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 47
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 48
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 49
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 50
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 51
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 52
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 53
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 54
+[02:15:01] RequestStore#acceptReply was called without receiving a matching request 55
+Failed login attempt {"xForwardedFor":"10.42.0.1","remoteAddress":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36","timestamp":1675809754}
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/code-server/lib/vscode/out/bootstrap.js:1:407)
+    at process.emit (node:events:539:35)
+[01:41:54] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/code-server/lib/vscode/out/vs/server/node/server.main.js:146:7923)
+    at process.emit (node:events:539:35)
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/code-server/lib/vscode/out/bootstrap.js:1:407)
+    at process.emit (node:events:539:35)
+[01:42:00] Error: Unexpected SIGPIPE
+    at process.<anonymous> (/code-server/lib/vscode/out/vs/server/node/server.main.js:146:7923)
+    at process.emit (node:events:539:35)

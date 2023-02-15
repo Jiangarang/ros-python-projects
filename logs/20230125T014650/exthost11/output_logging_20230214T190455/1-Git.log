@@ -1,0 +1,31 @@
+[2023-02-14T19:04:55.422Z] Log level: Info
+[2023-02-14T19:04:55.425Z] [info] Validating found git in: git
+[2023-02-14T19:04:55.463Z] [info] Using git 2.25.1 from git
+[2023-02-14T19:04:55.497Z] > git rev-parse --show-toplevel [20ms]
+[2023-02-14T19:04:55.497Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T19:04:55.527Z] > git rev-parse --show-toplevel [21ms]
+[2023-02-14T19:04:55.553Z] > git rev-parse --git-dir --git-common-dir [19ms]
+[2023-02-14T19:04:55.558Z] [info] Open repository: /my_ros_data/catkin_ws/src/prrexamples
+[2023-02-14T19:04:55.593Z] > git status -z -uall [26ms]
+[2023-02-14T19:04:55.600Z] > git rev-parse --show-toplevel [21ms]
+[2023-02-14T19:04:55.600Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T19:04:55.614Z] > git rev-parse --show-toplevel [7ms]
+[2023-02-14T19:04:55.614Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T19:04:55.621Z] > git symbolic-ref --short HEAD [22ms]
+[2023-02-14T19:04:55.629Z] > git rev-parse --show-toplevel [8ms]
+[2023-02-14T19:04:55.629Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T19:04:55.640Z] > git rev-parse --show-toplevel [4ms]
+[2023-02-14T19:04:55.640Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T19:04:55.640Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+[2023-02-14T19:04:55.662Z] > git remote --verbose [3ms]
+[2023-02-14T19:04:55.663Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13ms]
+[2023-02-14T19:04:55.678Z] > git config --get commit.template [2ms]
+[2023-02-14T19:04:56.006Z] > git show --textconv :src/dance.py [9ms]
+[2023-02-14T19:04:56.009Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/dance.py [4ms]
+[2023-02-14T19:04:56.138Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T19:04:58.661Z] > git check-ignore -v -z --stdin [1ms]

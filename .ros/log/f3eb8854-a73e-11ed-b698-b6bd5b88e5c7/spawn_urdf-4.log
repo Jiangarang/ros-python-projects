@@ -1,0 +1,30 @@
+[rospy.client][INFO] 2023-02-07 23:27:15,361: init_node, name[/spawn_urdf], pid[3004]
+[xmlrpc][INFO] 2023-02-07 23:27:15,362: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-02-07 23:27:15,362: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:44263/]
+[rospy.init][INFO] 2023-02-07 23:27:15,362: ROS Slave URI: [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:44263/]
+[rospy.impl.masterslave][INFO] 2023-02-07 23:27:15,362: _ready: http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:44263/
+[rospy.registration][INFO] 2023-02-07 23:27:15,363: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-02-07 23:27:15,363: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-02-07 23:27:15,463: registered with master
+[rospy.rosout][INFO] 2023-02-07 23:27:15,463: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-02-07 23:27:15,466: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-02-07 23:27:15,469: initializing /clock core topic
+[rospy.simtime][INFO] 2023-02-07 23:27:15,472: connected to core topic /clock
+[rosout][INFO] 2023-02-07 23:27:15,475: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2023-02-07 23:27:15,481: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-02-07 23:27:15,721: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2023-02-07 23:27:16,407: Calling service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-02-07 23:27:16,447: topic[/clock] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/], count 0
+[rosout][INFO] 2023-02-07 23:27:17,447: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2023-02-07 23:27:17,450: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-02-07 23:27:17,455: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-07 23:27:17,456: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/
+[rospy.internal][INFO] 2023-02-07 23:27:17,456: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/
+[rospy.topics][ERROR] 2023-02-07 23:27:17,456: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2023-02-07 23:27:17,456: atexit

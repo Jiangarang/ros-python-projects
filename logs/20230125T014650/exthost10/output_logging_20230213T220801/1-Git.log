@@ -1,0 +1,33 @@
+[2023-02-13T22:08:02.306Z] Log level: Info
+[2023-02-13T22:08:02.308Z] [info] Validating found git in: git
+[2023-02-13T22:08:02.348Z] [info] Using git 2.25.1 from git
+[2023-02-13T22:08:02.388Z] > git rev-parse --show-toplevel [23ms]
+[2023-02-13T22:08:02.388Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:08:02.421Z] > git rev-parse --show-toplevel [23ms]
+[2023-02-13T22:08:02.421Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:08:02.431Z] > git rev-parse --show-toplevel [1ms]
+[2023-02-13T22:08:02.431Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:08:02.441Z] > git rev-parse --show-toplevel [1ms]
+[2023-02-13T22:08:02.441Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:08:02.450Z] > git rev-parse --show-toplevel [1ms]
+[2023-02-13T22:08:02.450Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:08:02.800Z] > git rev-parse --show-toplevel [1ms]
+[2023-02-13T22:08:02.800Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-13T22:08:32.880Z] > git rev-parse --show-toplevel [0ms]
+[2023-02-13T22:08:32.889Z] > git rev-parse --git-dir --git-common-dir [1ms]
+[2023-02-13T22:08:32.894Z] [info] Open repository: /my_ros_data/catkin_ws/src/prrexamples
+[2023-02-13T22:08:32.915Z] > git status -z -uall [5ms]
+[2023-02-13T22:08:32.923Z] > git symbolic-ref --short HEAD [1ms]
+[2023-02-13T22:08:32.933Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+[2023-02-13T22:08:32.952Z] > git remote --verbose [2ms]
+[2023-02-13T22:08:32.952Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [10ms]
+[2023-02-13T22:08:32.966Z] > git config --get commit.template [1ms]
+[2023-02-13T22:08:33.461Z] > git show --textconv :src/dance.py [11ms]
+[2023-02-13T22:08:33.462Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/dance.py [2ms]
+[2023-02-13T22:08:33.630Z] > git check-ignore -v -z --stdin [1ms]

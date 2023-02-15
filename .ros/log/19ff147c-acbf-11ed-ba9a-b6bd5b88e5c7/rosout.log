@@ -1,0 +1,1242 @@
+
+
+1676417230.257519142  Node Startup
+0.000000000 INFO /spawn_urdf [gazebo_interface.py:27(spawn_urdf_model_client)] [topics: /rosout, /clock] Waiting for service /gazebo/spawn_urdf_model
+1676417231.512760007 INFO /gazebo [/tmp/binarydeb/ros-noetic-roscpp-1.15.14/src/libros/service.cpp:123(service::waitForService)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics] waitForService: Service [/gazebo/set_physics_properties] is now available.
+0.019000000 INFO /spawn_urdf [gazebo_interface.py:31(spawn_urdf_model_client)] [topics: /rosout, /clock] Calling service /gazebo/spawn_urdf_model
+1676417231.624610969 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-ros-2.9.2/src/gazebo_ros_api_plugin.cpp:2379(GazeboRosApiPlugin::physicsReconfigureThread)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Physics dynamic reconfigure ready.
+1676417232.014982919 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/include/gazebo_plugins/gazebo_ros_utils.h:99(string gazebo::GetRobotNamespace)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Laser Plugin: Using the 'robotNamespace' param: '/'
+1676417232.015017805 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_laser.cpp:115(GazeboRosLaser::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Starting Laser Plugin (ns = /)
+1676417232.026670513 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_laser.cpp:134(GazeboRosLaser::LoadThread)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+0.191000000 INFO /spawn_urdf [gazebo_interface.py:33(spawn_urdf_model_client)] [topics: /rosout, /clock] Spawn status: SpawnModel: Successfully spawned entity
+1676417232.313209911 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_utils.cpp:57(GazeboRos::readCommonParameter)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan] Starting plugin DiffDrive(ns = //)
+1676417232.313934390 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_utils.cpp:83(GazeboRos::readCommonParameter)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan] DiffDrive(ns = //): <rosDebugLevel> = na
+1676417232.315108769 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_utils.cpp:88(GazeboRos::readCommonParameter)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan] DiffDrive(ns = //): <tf_prefix> = 
+1676417232.316104961 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:151(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states] DiffDrive(ns = //): Advertise joint_states
+1676417232.316858174 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:157(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf] DiffDrive(ns = //): Try to subscribe to cmd_vel
+1676417232.319256926 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:165(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf] DiffDrive(ns = //): Subscribe to cmd_vel
+1676417232.320421457 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:170(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf, /odom] DiffDrive(ns = //): Advertise odom on odom 
+23.244000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+23.458000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+23.637000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+23.854000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+24.039000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+24.246000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+24.447000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+24.639000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+24.863000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+25.040000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+25.239000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+25.443000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7feec2a1ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+116.558000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+116.748000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+116.961000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+117.153000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+117.359000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+117.557000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+117.763000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+117.959000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+118.165000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+118.362000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+118.559000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+118.774000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+118.987000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+119.160000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+119.368000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+119.577000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+119.764000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+119.963000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+120.162000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+120.363000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+120.564000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+120.783000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+120.967000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+121.188000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+121.376000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+121.573000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+121.768000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+121.964000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+122.169000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+122.366000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+122.572000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+122.770000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+122.974000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+123.179000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+123.374000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /clock, /scan, /rosout] bad callback: <function cb at 0x7fb87c810d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+294.977000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+295.160000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+295.362000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+295.563000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+295.765000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+295.962000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+296.170000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+296.361000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7fe9fcb84d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+396.050000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+396.251000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+396.445000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+396.650000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+396.849000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+397.057000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+397.267000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+397.456000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+397.655000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+397.867000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+398.063000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+398.264000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+398.452000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+398.659000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+398.865000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+399.059000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+399.268000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+399.468000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /state, /scan] bad callback: <function cb at 0x7f6e5e0bad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+468.340000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+468.548000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+468.747000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+468.945000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+469.137000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+469.345000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+469.538000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+469.738000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+469.938000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+470.139000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+470.342000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+470.542000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+470.742000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+470.940000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+471.153000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /state, /clock, /rosout] bad callback: <function cb at 0x7fa14b649d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+491.984000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+492.180000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+492.383000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+492.581000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+492.801000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+492.996000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+493.186000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+493.388000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+493.585000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+493.788000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+493.984000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+494.187000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+494.397000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+494.591000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+494.798000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /state, /rosout, /scan] bad callback: <function cb at 0x7f62f40d4d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+716.126000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+716.322000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+716.527000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+716.693000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+716.939000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+717.127000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+717.331000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+717.531000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+717.740000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+717.936000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+718.129000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+718.329000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+718.554000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f7638dded30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+922.611000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f687303ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 15, in cb
+    print(state)
+UnboundLocalError: local variable 'state' referenced before assignment
+
+922.860000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f687303ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 15, in cb
+    print(state)
+UnboundLocalError: local variable 'state' referenced before assignment
+
+923.015000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f687303ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 15, in cb
+    print(state)
+UnboundLocalError: local variable 'state' referenced before assignment
+
+923.222000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f687303ad30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 15, in cb
+    print(state)
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1402.851000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1403.066000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1403.262000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1403.451000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1403.655000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1403.855000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1404.059000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1404.253000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1404.457000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1404.656000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1404.856000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1405.056000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1405.259000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /current_state, /clock, /state] bad callback: <function cb at 0x7f315436b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 31, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1476.565000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1476.768000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1476.974000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1477.175000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1477.374000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1477.577000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1477.782000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1477.978000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /scan, /current_state, /state] bad callback: <function cb at 0x7f25e338b430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1695.579000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1695.765000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1695.964000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1696.167000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1696.369000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1696.570000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1696.795000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1696.974000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1697.184000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1697.370000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1697.574000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+1697.774000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /current_state, /rosout] bad callback: <function cb at 0x7fe578ed8430>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 29, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+

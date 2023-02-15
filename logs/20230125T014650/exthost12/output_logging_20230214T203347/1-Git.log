@@ -1,0 +1,68 @@
+[2023-02-14T20:33:48.096Z] Log level: Info
+[2023-02-14T20:33:48.098Z] [info] Validating found git in: git
+[2023-02-14T20:33:48.136Z] [info] Using git 2.25.1 from git
+[2023-02-14T20:33:48.181Z] > git rev-parse --show-toplevel [29ms]
+[2023-02-14T20:33:48.181Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T20:33:48.216Z] > git rev-parse --show-toplevel [24ms]
+[2023-02-14T20:33:48.248Z] > git rev-parse --git-dir --git-common-dir [23ms]
+[2023-02-14T20:33:48.253Z] [info] Open repository: /my_ros_data/catkin_ws/src/prrexamples
+[2023-02-14T20:33:48.273Z] > git status -z -uall [9ms]
+[2023-02-14T20:33:48.282Z] > git rev-parse --show-toplevel [11ms]
+[2023-02-14T20:33:48.282Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T20:33:48.305Z] > git symbolic-ref --short HEAD [24ms]
+[2023-02-14T20:33:48.314Z] > git rev-parse --show-toplevel [22ms]
+[2023-02-14T20:33:48.314Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T20:33:48.330Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [17ms]
+[2023-02-14T20:33:48.353Z] > git remote --verbose [3ms]
+[2023-02-14T20:33:48.354Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [16ms]
+[2023-02-14T20:33:48.358Z] > git rev-parse --show-toplevel [36ms]
+[2023-02-14T20:33:48.358Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T20:33:48.389Z] > git config --get commit.template [3ms]
+[2023-02-14T20:33:48.391Z] > git rev-parse --show-toplevel [18ms]
+[2023-02-14T20:33:48.391Z] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+[2023-02-14T20:33:48.813Z] > git show --textconv :src/dance.py [9ms]
+[2023-02-14T20:33:48.814Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/dance.py [2ms]
+[2023-02-14T20:33:48.843Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:36.336Z] > git show --textconv :src/wall_follower.py [13ms]
+[2023-02-14T20:36:36.336Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/wall_follower.py [1ms]
+[2023-02-14T20:36:36.666Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:36.983Z] > git status -z -uall [4ms]
+[2023-02-14T20:36:36.991Z] > git symbolic-ref --short HEAD [1ms]
+[2023-02-14T20:36:37.002Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+[2023-02-14T20:36:37.019Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [10ms]
+[2023-02-14T20:36:37.019Z] > git remote --verbose [2ms]
+[2023-02-14T20:36:37.032Z] > git config --get commit.template [1ms]
+[2023-02-14T20:36:37.917Z] > git show --textconv :src/dance.py [15ms]
+[2023-02-14T20:36:37.922Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/dance.py [6ms]
+[2023-02-14T20:36:44.372Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:45.343Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:46.330Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:47.099Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:52.046Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:36:53.147Z] > git check-ignore -v -z --stdin [1ms]
+[2023-02-14T20:37:00.813Z] > git status -z -uall [4ms]
+[2023-02-14T20:37:00.822Z] > git symbolic-ref --short HEAD [1ms]
+[2023-02-14T20:37:00.830Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+[2023-02-14T20:37:00.847Z] > git remote --verbose [1ms]
+[2023-02-14T20:37:00.848Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [9ms]
+[2023-02-14T20:37:00.860Z] > git config --get commit.template [2ms]
+[2023-02-14T20:37:03.299Z] > git show --textconv :src/pa_starters/wall_follower/src/driver.py [11ms]
+[2023-02-14T20:37:03.299Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/driver.py [1ms]
+[2023-02-14T20:37:03.311Z] > git cat-file -s 210f9f6add0d02f9c624ae4552edbfb20b312a93 [1ms]
+[2023-02-14T20:37:06.675Z] > git show --textconv :src/pa_starters/wall_follower/src/pid.py [8ms]
+[2023-02-14T20:37:06.676Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/pid.py [1ms]
+[2023-02-14T20:37:06.684Z] > git cat-file -s adc4fc6175b62988001e1a84f83af1bccfa7f6de [1ms]
+[2023-02-14T20:37:07.190Z] > git show --textconv :src/pa_starters/wall_follower/src/scan_values_handler.py [8ms]
+[2023-02-14T20:37:07.191Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py [1ms]
+[2023-02-14T20:37:07.200Z] > git cat-file -s 9ff0159530e4ed212fe9a4284ac9356dce01d808 [2ms]
+[2023-02-14T20:37:07.699Z] > git show --textconv :src/pa_starters/wall_follower/src/state_definitions.py [9ms]
+[2023-02-14T20:37:07.699Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/state_definitions.py [1ms]
+[2023-02-14T20:37:07.712Z] > git cat-file -s 21a6848b7f833265cd11cd72d6f6548e22120091 [4ms]
+[2023-02-14T20:37:16.548Z] > git show --textconv :src/pa_starters/wall_follower/src/scan_values_handler.py [11ms]
+[2023-02-14T20:37:16.549Z] > git ls-files --stage -- /my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py [2ms]
+[2023-02-14T20:37:16.556Z] > git cat-file -s 9ff0159530e4ed212fe9a4284ac9356dce01d808 [1ms]

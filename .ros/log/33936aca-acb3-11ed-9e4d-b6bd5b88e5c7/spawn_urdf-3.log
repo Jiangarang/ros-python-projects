@@ -1,0 +1,21 @@
+[rospy.client][INFO] 2023-02-14 22:08:30,484: init_node, name[/spawn_urdf], pid[7026]
+[xmlrpc][INFO] 2023-02-14 22:08:30,485: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-02-14 22:08:30,487: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/]
+[rospy.impl.masterslave][INFO] 2023-02-14 22:08:30,487: _ready: http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/
+[rospy.registration][INFO] 2023-02-14 22:08:30,488: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2023-02-14 22:08:30,488: ROS Slave URI: [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42051/]
+[rospy.init][INFO] 2023-02-14 22:08:30,489: registered with master
+[rospy.rosout][INFO] 2023-02-14 22:08:30,489: initializing /rosout core topic
+[xmlrpc][INFO] 2023-02-14 22:08:30,491: xml rpc node: starting XML-RPC server
+[rospy.rosout][INFO] 2023-02-14 22:08:30,501: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-02-14 22:08:30,504: initializing /clock core topic
+[rospy.simtime][INFO] 2023-02-14 22:08:30,513: connected to core topic /clock
+[rospy.internal][INFO] 2023-02-14 22:08:30,545: topic[/clock] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/], count 0
+[rosout][INFO] 2023-02-14 22:08:30,567: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2023-02-14 22:08:30,583: Waiting for service /gazebo/spawn_urdf_model
+[rosout][INFO] 2023-02-14 22:08:30,594: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2023-02-14 22:08:30,610: Spawn status: SpawnModel: Failure - entity already exists.
+[rosout][ERROR] 2023-02-14 22:08:30,612: Spawn service failed. Exiting.
+[rospy.core][INFO] 2023-02-14 22:08:30,616: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-02-14 22:08:30,618: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:39253/
+[rospy.impl.masterslave][INFO] 2023-02-14 22:08:30,618: atexit

@@ -1,0 +1,762 @@
+
+
+1676412643.076357861  Node Startup
+0.000000000 INFO /spawn_urdf [gazebo_interface.py:27(spawn_urdf_model_client)] [topics: /clock, /rosout] Waiting for service /gazebo/spawn_urdf_model
+1676412644.619235131 INFO /gazebo [/tmp/binarydeb/ros-noetic-roscpp-1.15.14/src/libros/service.cpp:123(service::waitForService)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics] waitForService: Service [/gazebo/set_physics_properties] is now available.
+0.000000000 INFO /spawn_urdf [gazebo_interface.py:31(spawn_urdf_model_client)] [topics: /clock, /rosout] Calling service /gazebo/spawn_urdf_model
+1676412644.970323098 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/include/gazebo_plugins/gazebo_ros_utils.h:99(string gazebo::GetRobotNamespace)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Laser Plugin: Using the 'robotNamespace' param: '/'
+1676412644.970395775 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_laser.cpp:115(GazeboRosLaser::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Starting Laser Plugin (ns = /)
+1676412644.972783695 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_laser.cpp:134(GazeboRosLaser::LoadThread)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates] Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+0.001000000 INFO /spawn_urdf [gazebo_interface.py:33(spawn_urdf_model_client)] [topics: /clock, /rosout] Spawn status: SpawnModel: Successfully spawned entity
+1676412646.030535712 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_utils.cpp:57(GazeboRos::readCommonParameter)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan] Starting plugin DiffDrive(ns = //)
+1676412646.031202130 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_utils.cpp:83(GazeboRos::readCommonParameter)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan] DiffDrive(ns = //): <rosDebugLevel> = na
+1676412646.037113916 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_utils.cpp:88(GazeboRos::readCommonParameter)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan] DiffDrive(ns = //): <tf_prefix> = 
+1676412646.038283866 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:151(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states] DiffDrive(ns = //): Advertise joint_states
+1676412646.039769933 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:157(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf] DiffDrive(ns = //): Try to subscribe to cmd_vel
+1676412646.043492083 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-ros-2.9.2/src/gazebo_ros_api_plugin.cpp:2379(GazeboRosApiPlugin::physicsReconfigureThread)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf] Physics dynamic reconfigure ready.
+1676412646.056304333 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:165(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf] DiffDrive(ns = //): Subscribe to cmd_vel
+1676412646.057098112 INFO /gazebo [/tmp/binarydeb/ros-noetic-gazebo-plugins-2.9.2/src/gazebo_ros_diff_drive.cpp:170(GazeboRosDiffDrive::Load)] [topics: /rosout, /clock, /gazebo/link_states, /gazebo/model_states, /gazebo/performance_metrics, /gazebo/parameter_descriptions, /gazebo/parameter_updates, /scan, /joint_states, /tf, /odom] DiffDrive(ns = //): Advertise odom on odom 
+3237.846000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3238.037000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3238.239000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3238.439000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3238.640000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3238.849000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3239.042000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3239.238000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3239.458000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3239.635000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3239.841000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3240.044000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3240.268000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3240.462000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3240.653000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3240.852000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3241.041000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3241.244000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3241.445000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3241.642000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3241.845000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3242.051000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3242.243000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3242.449000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3242.655000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3242.861000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3243.047000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3243.255000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3243.447000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /rosout, /scan, /state] bad callback: <function cb at 0x7f21e1525d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 20, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3361.315000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3361.520000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3361.711000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3361.912000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3362.107000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3362.307000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3362.516000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /clock, /state] bad callback: <function cb at 0x7f41cc5d8dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3385.972000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3386.203000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3386.376000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3386.597000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3386.792000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3386.997000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3387.189000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3387.388000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3387.584000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3387.787000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3388.001000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3388.192000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3388.392000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3388.592000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3388.794000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3388.994000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3389.194000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3389.390000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3389.607000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3389.791000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3389.994000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3390.200000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /rosout, /clock, /scan] bad callback: <function cb at 0x7feddb0addc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 25, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3442.475000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7fe50507cdc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3442.683000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7fe50507cdc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3442.877000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7fe50507cdc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3458.888000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /rosout, /clock] bad callback: <function cb at 0x7f3808876dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3459.086000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /rosout, /clock] bad callback: <function cb at 0x7f3808876dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3459.288000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /rosout, /clock] bad callback: <function cb at 0x7f3808876dc0>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3492.755000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /state, /scan, /clock] bad callback: <function cb at 0x7f2f5ad14d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 19, in cb
+    print ("distance rear: " + msg.ranges[180])
+TypeError: can only concatenate str (not "float") to str
+
+3492.948000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /state, /scan, /clock] bad callback: <function cb at 0x7f2f5ad14d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 19, in cb
+    print ("distance rear: " + msg.ranges[180])
+TypeError: can only concatenate str (not "float") to str
+
+3493.150000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /state, /scan, /clock] bad callback: <function cb at 0x7f2f5ad14d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 19, in cb
+    print ("distance rear: " + msg.ranges[180])
+TypeError: can only concatenate str (not "float") to str
+
+3531.932000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3532.129000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3532.327000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3532.540000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3532.731000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3532.935000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3533.129000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /state, /scan, /clock, /rosout] bad callback: <function cb at 0x7fd2a32a8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3619.842000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /state, /scan] bad callback: <function cb at 0x7f568b3d6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3620.053000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /clock, /state, /scan] bad callback: <function cb at 0x7f568b3d6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3658.890000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /state, /clock] bad callback: <function cb at 0x7f472d1d0d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3659.094000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /rosout, /state, /clock] bad callback: <function cb at 0x7f472d1d0d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3670.814000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f24c9fa8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3670.986000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f24c9fa8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3671.195000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /rosout, /state] bad callback: <function cb at 0x7f24c9fa8d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3683.265000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /scan, /state, /rosout] bad callback: <function cb at 0x7fdbf41a9d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3683.455000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /scan, /state, /rosout] bad callback: <function cb at 0x7fdbf41a9d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3683.657000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /clock, /scan, /state, /rosout] bad callback: <function cb at 0x7fdbf41a9d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    distance_ahead = (msg.ranges[358] + msg.ranges[359] + msg.ranges[360]) / 3
+IndexError: tuple index out of range
+
+3920.584000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f02751a6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    print(str(distance_back))
+NameError: name 'distance_back' is not defined
+
+3920.762000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f02751a6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    print(str(distance_back))
+NameError: name 'distance_back' is not defined
+
+3920.984000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f02751a6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    print(str(distance_back))
+NameError: name 'distance_back' is not defined
+
+3921.164000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f02751a6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    print(str(distance_back))
+NameError: name 'distance_back' is not defined
+
+3921.363000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /rosout, /scan, /state, /clock] bad callback: <function cb at 0x7f02751a6d30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 24, in cb
+    print(str(distance_back))
+NameError: name 'distance_back' is not defined
+
+3939.651000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7f8ff03dbd30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+3939.860000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7f8ff03dbd30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+3940.056000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7f8ff03dbd30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+
+3940.249000000 ERROR /scan_values_handler [topics.py:753(_SubscriberImpl._invoke_callback)] [topics: /scan, /clock, /state, /rosout] bad callback: <function cb at 0x7f8ff03dbd30>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/my_ros_data/catkin_ws/src/prrexamples/src/pa_starters/wall_follower/src/scan_values_handler.py", line 26, in cb
+    if (state == 0 and distance_ahead <= 1): # if wall is <= 1m ahead, begin rotating robot until shortest distance is aligned to right side
+UnboundLocalError: local variable 'state' referenced before assignment
+

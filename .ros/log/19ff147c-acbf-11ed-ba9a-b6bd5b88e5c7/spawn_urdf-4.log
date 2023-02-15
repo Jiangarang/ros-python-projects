@@ -1,0 +1,22 @@
+[rospy.client][INFO] 2023-02-14 23:27:10,586: init_node, name[/spawn_urdf], pid[10515]
+[xmlrpc][INFO] 2023-02-14 23:27:10,587: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-02-14 23:27:10,587: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36939/]
+[rospy.init][INFO] 2023-02-14 23:27:10,587: ROS Slave URI: [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36939/]
+[rospy.impl.masterslave][INFO] 2023-02-14 23:27:10,587: _ready: http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:36939/
+[rospy.registration][INFO] 2023-02-14 23:27:10,588: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-02-14 23:27:10,588: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-02-14 23:27:10,687: registered with master
+[rospy.rosout][INFO] 2023-02-14 23:27:10,688: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-02-14 23:27:10,691: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-02-14 23:27:10,693: initializing /clock core topic
+[rospy.simtime][INFO] 2023-02-14 23:27:10,694: connected to core topic /clock
+[rosout][INFO] 2023-02-14 23:27:10,696: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2023-02-14 23:27:10,703: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2023-02-14 23:27:10,932: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2023-02-14 23:27:11,472: topic[/clock] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33173/], count 0
+[rosout][INFO] 2023-02-14 23:27:11,616: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2023-02-14 23:27:12,303: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2023-02-14 23:27:12,305: signal_shutdown [atexit]
+[rospy.internal][INFO] 2023-02-14 23:27:12,313: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-14 23:27:12,313: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:33173/
+[rospy.impl.masterslave][INFO] 2023-02-14 23:27:12,313: atexit

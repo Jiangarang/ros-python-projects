@@ -1,0 +1,19 @@
+[rospy.client][INFO] 2023-02-14 21:56:31,844: init_node, name[/rostopic_17029_1676411791788], pid[17029]
+[xmlrpc][INFO] 2023-02-14 21:56:31,845: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2023-02-14 21:56:31,845: Started XML-RPC server [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45207/]
+[rospy.init][INFO] 2023-02-14 21:56:31,847: ROS Slave URI: [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45207/]
+[rospy.impl.masterslave][INFO] 2023-02-14 21:56:31,847: _ready: http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45207/
+[rospy.registration][INFO] 2023-02-14 21:56:31,852: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2023-02-14 21:56:31,855: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2023-02-14 21:56:31,947: registered with master
+[rospy.rosout][INFO] 2023-02-14 21:56:31,948: initializing /rosout core topic
+[rospy.rosout][INFO] 2023-02-14 21:56:31,954: connected to core topic /rosout
+[rospy.simtime][INFO] 2023-02-14 21:56:31,956: initializing /clock core topic
+[rospy.simtime][INFO] 2023-02-14 21:56:31,966: connected to core topic /clock
+[rospy.internal][INFO] 2023-02-14 21:56:31,997: topic[/clock] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/], count 0
+[rospy.internal][INFO] 2023-02-14 21:56:32,191: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2023-02-14 21:56:53,955: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2023-02-14 21:56:53,958: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-14 21:56:53,958: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45499/
+[rospy.impl.masterslave][INFO] 2023-02-14 21:56:53,958: signal-2
+[rospy.core][INFO] 2023-02-14 21:56:54,559: signal_shutdown [atexit]
