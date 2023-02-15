@@ -380,3 +380,11 @@
 [01:38:29] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
 [03:16:04] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
 [03:16:04] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[03:20:33] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[03:22:17] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[03:22:17] [127.0.0.1][cd784f89][ExtensionHostConnection] <7057> Extension Host Process exited with code: 0, signal: null.
+[03:22:20] [127.0.0.1][8776ea65][ManagementConnection] New connection established.
+[03:22:22] [127.0.0.1][bcd80a53][ExtensionHostConnection] New connection established.
+[03:22:22] [127.0.0.1][bcd80a53][ExtensionHostConnection] <27021> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 344 chars and 1 size events
+[IPC Library: Pty Host]  INFO Persistent process "2": Replaying 5655 chars and 1 size events

@@ -412,3 +412,9 @@ Require stack:
 [2023-02-15 01:38:29.761] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
 [2023-02-15 03:16:04.503] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
 [2023-02-15 03:16:04.651] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 03:20:33.401] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 03:22:17.013] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2023-02-15 03:22:17.122] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] <7057> Extension Host Process exited with code: 0, signal: null.
+[2023-02-15 03:22:20.719] [remoteagent] [info] [127.0.0.1][8776ea65][ManagementConnection] New connection established.
+[2023-02-15 03:22:22.100] [remoteagent] [info] [127.0.0.1][bcd80a53][ExtensionHostConnection] New connection established.
+[2023-02-15 03:22:22.154] [remoteagent] [info] [127.0.0.1][bcd80a53][ExtensionHostConnection] <27021> Launched Extension Host Process.
