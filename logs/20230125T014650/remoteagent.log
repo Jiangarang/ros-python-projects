@@ -408,3 +408,7 @@ Require stack:
 [2023-02-15 01:25:48.262] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
 [2023-02-15 01:28:48.453] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
 [2023-02-15 01:32:08.263] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:38:29.732] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
+[2023-02-15 01:38:29.761] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 03:16:04.503] [remoteagent] [info] [127.0.0.1][cd784f89][ExtensionHostConnection] The client has reconnected.
+[2023-02-15 03:16:04.651] [remoteagent] [info] [127.0.0.1][d9ba1fe1][ManagementConnection] The client has reconnected.
