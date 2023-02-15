@@ -664,3 +664,11 @@ OSError: [Errno 9] Bad file descriptor
 [rospy.internal][INFO] 2023-02-15 01:21:14,139: topic[/cmd_vel] adding connection to [/gazebo], count 0
 [rospy.internal][INFO] 2023-02-15 01:21:16,457: topic[/current_state] adding connection to [/scan_values_handler], count 0
 [rospy.internal][INFO] 2023-02-15 01:21:16,480: topic[/state] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/], count 0
+[rospy.internal][INFO] 2023-02-15 03:25:52,858: topic[/state] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
+[rospy.internal][INFO] 2023-02-15 03:25:53,103: topic[/current_state] removing connection to /scan_values_handler
+[rospy.core][INFO] 2023-02-15 03:25:55,458: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2023-02-15 03:25:55,476: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-15 03:25:55,477: topic[/cmd_vel] removing connection to /gazebo
+[rospy.internal][INFO] 2023-02-15 03:25:55,477: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/
+[rospy.impl.masterslave][INFO] 2023-02-15 03:25:55,477: signal-2
+[rospy.core][INFO] 2023-02-15 03:25:56,071: signal_shutdown [atexit]

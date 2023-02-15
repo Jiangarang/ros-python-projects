@@ -6,12 +6,10 @@ PLEASE INCLUDE THE REST OF THE README HERE
 
 ***
 
-PLEASE READ: roslaunch did not work for me, wall_follower was not recognized as a package, even after I performed catkin_create_pkg and made sure it was under
-the correct path, so this readme will be how I started the nodes separately, which I am aware is not the best practice :(
+READ: roslaunch did not work for me, wall_follower was not recognized as a package, even after I performed catkin_create_pkg and made sure it was under
+the correct path
 
 To startup gazebo:
 in one cmd tab: [:]~$ roslaunch turtlebot3_gazebo turtlebot3_stage_1.launch
-
-To begin nodes:
 in another tab: [:]~$ rosrun prrexamples scan_values_handler.py
-in another tab: [:]~$ rosrun prrexamples driver.py
+in another tab: 

@@ -7230,3 +7230,11 @@ NameError: name 'last_distance_right' is not defined
 [rospy.internal][INFO] 2023-02-15 01:21:16,475: topic[/scan] adding connection to [http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/], count 0
 [rospy.internal][INFO] 2023-02-15 01:21:16,483: topic[/state] adding connection to [/driver], count 0
 [rospy.internal][INFO] 2023-02-15 01:21:16,633: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2023-02-15 03:25:52,854: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2023-02-15 03:25:52,857: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2023-02-15 03:25:52,857: topic[/state] removing connection to /driver
+[rospy.internal][INFO] 2023-02-15 03:25:52,858: topic[/clock] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/
+[rospy.internal][INFO] 2023-02-15 03:25:52,858: topic[/scan] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/
+[rospy.internal][INFO] 2023-02-15 03:25:52,858: topic[/current_state] removing connection to http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/
+[rospy.impl.masterslave][INFO] 2023-02-15 03:25:52,858: signal-2
+[rospy.core][INFO] 2023-02-15 03:25:53,460: signal_shutdown [atexit]

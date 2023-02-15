@@ -134,3 +134,4 @@
 [2023-02-15 03:23:15.643] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/my_ros_data/catkin_ws/src/prrexamples/src/service_server.py' is in submodule 'catkin_ws/src/prrexamples'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
 [2023-02-15 03:23:15.643] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/my_ros_data/catkin_ws/src/prrexamples/src/service_server.py' is in submodule 'catkin_ws/src/prrexamples'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
 [2023-02-15 03:23:15.643] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/my_ros_data/catkin_ws/src/prrexamples/src/service_server.py' is in submodule 'catkin_ws/src/prrexamples'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2023-02-15 03:23:49.555] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'

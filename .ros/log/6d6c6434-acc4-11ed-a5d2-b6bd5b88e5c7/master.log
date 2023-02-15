@@ -1512,3 +1512,25 @@ ConnectionRefusedError: [Errno 111] Connection refused
 [rosmaster.master][INFO] 2023-02-15 01:21:16,436: +PUB [/state] /scan_values_handler http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
 [rosmaster.master][INFO] 2023-02-15 01:21:16,470: publisherUpdate[/state] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/']
 [rosmaster.master][INFO] 2023-02-15 01:21:16,475: publisherUpdate[/state] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-15 03:25:52,856: -SUB [/clock] /scan_values_handler http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
+[rosmaster.master][INFO] 2023-02-15 03:25:52,856: -SUB [/scan] /scan_values_handler http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
+[rosmaster.master][INFO] 2023-02-15 03:25:52,856: -SUB [/current_state] /scan_values_handler http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
+[rosmaster.master][INFO] 2023-02-15 03:25:52,857: -PUB [/rosout] /scan_values_handler http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
+[rosmaster.master][INFO] 2023-02-15 03:25:52,857: -PUB [/state] /scan_values_handler http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34703/
+[rosmaster.master][INFO] 2023-02-15 03:25:52,857: -SERVICE [/scan_values_handler/get_loggers] /scan_values_handler rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40715
+[rosmaster.master][INFO] 2023-02-15 03:25:52,857: -SERVICE [/scan_values_handler/set_logger_level] /scan_values_handler rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:40715
+[rosmaster.master][INFO] 2023-02-15 03:25:52,862: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:41729/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34369/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/']
+[rosmaster.master][INFO] 2023-02-15 03:25:52,864: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:41729/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34369/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-15 03:25:52,864: publisherUpdate[/state] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/ []
+[rosmaster.master][INFO] 2023-02-15 03:25:52,877: publisherUpdate[/state] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/ []: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-15 03:25:55,469: -SUB [/clock] /driver http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/
+[rosmaster.master][INFO] 2023-02-15 03:25:55,471: -SUB [/state] /driver http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/
+[rosmaster.master][INFO] 2023-02-15 03:25:55,473: -PUB [/rosout] /driver http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/
+[rosmaster.master][INFO] 2023-02-15 03:25:55,473: -PUB [/cmd_vel] /driver http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/
+[rosmaster.master][INFO] 2023-02-15 03:25:55,473: -PUB [/current_state] /driver http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:42355/
+[rosmaster.master][INFO] 2023-02-15 03:25:55,473: -SERVICE [/driver/get_loggers] /driver rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45117
+[rosmaster.master][INFO] 2023-02-15 03:25:55,473: -SERVICE [/driver/set_logger_level] /driver rosrpc://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:45117
+[rosmaster.master][INFO] 2023-02-15 03:25:55,500: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:41729/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34369/']
+[rosmaster.master][INFO] 2023-02-15 03:25:55,500: publisherUpdate[/cmd_vel] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/ []
+[rosmaster.master][INFO] 2023-02-15 03:25:55,501: publisherUpdate[/cmd_vel] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2023-02-15 03:25:55,501: publisherUpdate[/rosout] -> http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:41729/ ['http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:37741/', 'http://michaeljiang-clouddesktop-deployment-798ccff866-hvfzw:34369/']: sec=0.00, result=[1, '', 0]
